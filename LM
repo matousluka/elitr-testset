@@ -11,45 +11,46 @@ Je tvoje.
 Děkuji za přivítání.
 No, obávám se, že to i uvidíte na vlastní oči.
 Takže, jak bylo řečeno, tohle je shrnutí dosavadního vývoje projektu ELITR, kde se pokoušíme o překlad v reálném čase do několika cílových jazyků, a já bych vám teď krátce představil, jak to celé funguje.
+Zkusím to ještě jednou.
 Tedy, jestli se tu něco objeví, nevypadá to tak.
 O, ano, objeví. Něco se děje!
-Možná dole na obrazovce.
-Se zobrazí anglické titulky toho, co říkám, není to ale vůbec jisté. V těch transkripcích se může objevit mnoho vad a překlad vám záměrně neukážeme, neboť je náročné překlad vtěstnat do těchto dvou řádků.
-But if you have a, but if you have to you your machines, your notebooks, or or maybe even cell phones with you.
-There is a shared Google docuemnt, which you probably know from previous Monday Seminars, and there is two links where you can see also the translations, not only in the transcripts, and you can choose the target languages.
-I believe Hindi, is also among also among the target languages.
-So there will be use some intentional jokes during the presentation, and there will be many unintentional ones in the subtitles.
-Please do not laugh too loud.
-We we know what is appearing there.
-But that is that is life that is work in progress.
-So today.
-I would like to briefly discuss the differences between machine translation and spoken language translation.
-And then I'll summarize the ambition that our project has ah, and, because the ambition is is high.
-We know it.
-We ruun a number of test sessions.
-And this is actually one of the test sessions as well.
-So after the summary of the test sessions that that we are taking part in.
-I will briefly summarize the old architecture.
-And then I will go along all the possible issues of all the everything that can go wrong.
-That's yeah that is a long long list of things that that can go wrong.
-And luckily, thanks to the number of events that we are trying this list of errors.
-Is well the errors that we spot on.
-Every new seminar instance, is is not growing much.
-So we still have the errors.
-But luckily, we are close to seeing known errors, which we have some ways, at least, in some cases, we which we have some ways to fix. Okay, and then I will summarize and call to action.
-So again, tiny url dot com.
+Možná se dole na obrazovce.
+Zobrazí anglické titulky toho, co říkám, není to ale vůbec jisté. V těch transkripcích se může objevit mnoho vad a překlad vám záměrně neukážeme, neboť je náročné překlad vtěstnat do těchto dvou řádků.
+Pokud tu však máte vlastní zařízení, vlastní notebook nebo také telefon.
+Existuje sdílený Google dokument, který pravděpodobně znáte z předchozích pondělních seminářů, a tam jsou dva odkazy, kde můžete vidět nejen transkripce, ale i překlady do cílového jazyka, který si vyberete.
+Myslím, že mezi těmito jazyky je i hindština.
+Takže, při prezentaci záměrně zazní pár vtipů a mnoho si nezáměrně přečtete v titulcích.
+Nesmějte se příliš hlasitě.
+My víme, co se tu objevuje.
+Ale tohle probíhá v reálném čase.
+Takže, dnes.
+Bych rád krátce pohovořil o rozdílech mezi strojovým překladem a překladu mluvéného slova.
+A následně shrnul ambice, které náš projekt má, a že jsou opravdu velké.
+My víme.
+A provádíme několik testovacích situací.
+Tohle je ostatně jedna z nich.
+Takže, po zhodnocení testovacích situací, kterých se účastníme.
+Bych v krátkosti shrnul původní stavbu.
+A pak bych se dostal ke všem možným důvodům, proč by se něco mohlo pokazit.
+Je to, ano, je to celkem dlouhý výčet.
+A k našemu štěstí, díky všem situacím, které zkoušíme, jsou tyto chyby.
+Také ty, které odhalíme.
+S každým dalším vývojovým stupněm, jejich počet tolik nestoupá.
+Takže sice máme chyby.
+Ale naštěstí už jsme blízko tomu je v některých případech opravit. Dobrá, pak to shrnu a pustíme se do akce.
+Takže ještě jednou, tiny url tečka com.
 ELITR monday tests.
-That is where you can see the subtitles.
-Okay, ah, we have been working.
-We as the Department have been working on machine translation, for many years, or decades actually and.
-When you say machine translation.
-We might mean text translation.
-And there the imput are sentences, which are, which are almost always grammatically, correct, and they may come in documents.
-So you may have some content, some context surrounding the sentences, or you might translate sentence by sentence.
-But it is definitely like sentence based. In spoken language translation.
-The input is sound.
-And the output is text.
-We will get to some more details about.
+Tam si můžete zobrazit titulky.
+Dobrá, už dlouho pracujeme.
+Jako Ústav už dlouho pracujeme na strojovém překladu, už několik let, nebo dekád vlastně a.
+Když se řekne strojový překlad.
+Zřejmě si představíme překlad textu.
+Kde vstupními daty jsou věty, které jsou skoro vždy gramaticky správně a mohou přijít do dokumentu.
+Takže máte nějaké sdělení, nějaký kontext okolo, nebo můžete překládat větu po větě.
+Každopádně je nepochybně postavené na větách. Při překladu mluveného slova.
+Je vstupním datem zvuk.
+A výstupním text.
+Ještě se dostaneme k podrobnějším detailům.
 What does this text, but sentences, may or may not be produced, and actually they sometimes should not be assumed at all.
 So maybe what we all know that we do not speak in sentences and figuring out where the sentence.
 End is is a difficult part.
