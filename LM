@@ -51,59 +51,59 @@ Každopádně je nepochybně postavené na větách. Při překladu mluveného s
 Je vstupním datem zvuk.
 A výstupním text.
 Ještě se dostaneme k podrobnějším detailům.
-What does this text, but sentences, may or may not be produced, and actually they sometimes should not be assumed at all.
-So maybe what we all know that we do not speak in sentences and figuring out where the sentence.
-End is is a difficult part.
-So that is there.
-There will be some tension.
-When when putting these two components together, the speech recognition and the machine translation.
-And there is one more area that I would like to just mention is called "incremental machine translation".
-And there, this is machine translation, researchers doing that.
-So they start with words, words that come in sentences, and they just feed the system with the words, but one at time.
-So the incremental machine.
-translation is still to at least to my knowledge to my understanding is still text based translation.
-It just comes a word at a time.
-And that 's different from the speech, which comes a second at a time, like a a bit of sound at a time, so that the timing is different.
-Even if we even if we go for some incremental thing.
-Okay.
-So this is in pictures, the ambition, or the the summary of the two technologies that are examined by by our project.
-We are trying to put to put together speech recognition and machine translation into spoken language translation.
-Here's, some history of ah, speech recognition, we haven't really as a department.
-We have not really worked on speech recognition.
-So will I just copied this from from somewhere.
-And it seems that the already from the eighties people ran many shared tasks and they improved the the performance of of the recognition.
-And here around two to four percent of word error rate.
-That is where humans are with their precision and.
-In early days.
-In nineteen ninty something some systems got to the human performance, and then on conversational speech, which is like unlimited is unlimited speech or meetings people.
-The systems are far from this from this benchmark, but that has been changing, over the last years thanks to the neural networks.
-So the switchboard conversational speech benchmark that is 40 calls between two random English speakers there.
-The human level of six percent has been kind of reaching 2017.
-So that seems like that speech recognition.
-If it is the right setting.
-It can work equally as equally well as as humans do.
-Then this is the the the history of machine translation into Czech that you know, from previous presentations off  Martin Pope, well, and also then from me.
-This is our systems.
-And the last one is the Super Human machine translation system from English into Czech in 2018.
-Martin Popel's set up was able to, to outperform human translators like professional translators but that was bulk translation.
-It was they.
-They did not pay more attention to that, then the then look to their normal job.
-So that was like the the average professional translation quality and evaluated sentence by sentence.
-Uh, the set up by Martin Popel was was significantly better than that.
-Obviously, there is many caveats to uh, to uh, take into account.
-But that is the that is the setting.
-You have two technologies.
-You have spoken language translation, which could be on par with humans, and you have machine translation.
-Uh.
-So sorry, so you have speech recognition, which could be on par with the humans and machine translation, which could be on par with humans.
-So that is where we said," let us join them.
-Let us.
-Let us get this.
-Let us make use of this of these great two achievements.
-Let us put them together.
-So in our project, the ELITR.
-Project.
-We are trying to.
+Co tento text dělá, ale věty mohou, ale nemusí být produkovány, a někdy bychom je dokonce ani neměli předpokládat.
+Všichni pravděpodobně víme, že nemluvíme ve větách a zjistit.
+Kde končí, je občas náročné.
+Takže je tu tohle.
+Jisté napětí.
+Když k sobě dáme tyto dva komponenty, mluvenou řeč a strojový překlad.
+Je tu ještě jedna oblast, kterou bych chtěl zmínit, a sice "postupný strojový překlad".
+Vědci k touto typu přistupují tak.
+Že začnou slovy, která tvoří věty, a tato slova přidávají do systému, ale vždy postupně.
+Proto postupný strojový překlad.
+Překlad je pro mě, alespoň podle toho, co vím a jak tomu rozumím, stále založený na textu.
+Je produkován jednou za čas a obsahuje pouze slova.
+Což je jiné než u slova mluveného, které probíhá v reálném čase, trochu jako zvuk, takže načasování je odlišné.
+I když děláme věci postupně.
+Dobrá.
+Takže na obrázcích vidíte ambici, respektive shrnutí obou technologií, kterými se náš projekt zabývá.
+Snažíme se spojit rozpoznávání řeči a strojový překlad do překladu mluveného slova.
+Zde je něco k histroii rozpoznávání řeči, my jako Ústav.
+Jsme se jím moc nezabývali.
+Takže jsem tohle odněkud zkopíroval.
+Jak je vidět, už od osmdesátých let proběhlo několik testů, které činnost rozpoznování řeči dokázaly vylepšit.
+Dostali jsme se k poměru okolo dvou až čtyř procent chybných slov.
+Takže sem jsme to s přesností dokázali vytáhnout a.
+V úplných začátcích.
+V roce devatenáct set devadesát něco se některé systémy ve svém výkonu přiblížily člověku, a to i u běžné řeči, kde je nekonečné množství projevů či setkání.
+V porovnání jsou systémy však stále někde úplně jinde, ale to se v posledních letech díky neuronovým sítím začalo měnit.
+Takže se u běžné řeči dostaneme někam ke 40 jednotkám mezi dvěma náhodnými anglickými mluvčími.
+U člověka je to při šesti procentech 2017.
+Což připomíná rozpoznávání řeči.
+Pokud ho správně nastavíme.
+Dokáže se vyrovnat člověku.
+Tohle je pak vývoj strojového překladu do češtiny, jak si pamatujete z předchozích příspěvků Martina Popela a těch mých.
+Tohle jsou naše systémy.
+A ten poslední z nich je superlidský strojový překlad z angličtiny do češtiny v roce 2018.
+Popel ho sestrojil tak, že dokázal překonat profesionální lidské překladatele, ale jednalo se objemný překlad.
+Bylo to jimi.
+Nevěnovali tomu tolik pozornosti, brali to jako běžnou zakázku.
+Takže vytvořili překlad průměrné kvality, věty po větě.
+Popelův systém tak byl výrazně lepší než oni.
+Samozřejmě existuje mnoho aspektů, které brát v potaz.
+Ale takhle je to nastavené.
+Máte dva systémy.
+Překlad mluveného slova, který se dokáže vyrovnat člověku, a strojový překlad.
+Ou.
+Omlouvám se, máte rozpoznávání řeči, které se dokáže vyrovnat člověku, a strojový překlad, který se dokáže vyrovnat člověku.
+Takže to je to, kde jsme si řekli, že se přidáme.
+Pojďme.
+Pojďme zde.
+Pojďme zde dosáhnout těchto dvou úspěchů.
+A dát je dohromady.
+Takže to je náš projekt, ELITR.
+No, projekt.
+Snažíme se.
 This will be badly misrecognized  because it does not recognize any names. Well, so in the ELITR project we are putting together speech recognition and machine translation in a highly multilingual setting. I will mention that later on.
 Well, we are coordinating the project, the University of Edinburgh, including us, are experts in machine translation.
 So to say. Karlsruhe is expert in speech recognition.
