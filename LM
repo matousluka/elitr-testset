@@ -208,57 +208,57 @@ Psát blog je zábava, ano.
 Hned se cítíte slavní.
 A je jedno, jestli vás někdo sleduje, jen ta samotná skutečnost.
 Z vás dělá hvězdu, která může aspoň trochu vylepšit svět kolem ní.
-So, uh, yeah, well, we do not do photoshopping of our demos.
-The only thing what we do is we select the bits where it worked.
-So from those two day events it was one minute, and but we are growing bigger.
-So, so hopefully there will be almost, almost 50 minutes of today, which will be subtitled throughout the whole session.
-So I said at the beginning, ASR and MT, these are perfect technologies.
-They work very well.
-They are super human.
-You just plug them together.
-Well, it is not quite like that.
-You still need to acquire the sound, you need to get the input, and you need to present the output.
+Takže, no, my neděláme photoshooting našich dem.
+Jediné, co děláme, je, že vybíráme ty části, které fungovaly.
+Z celé dvoudenní akce to byla jedna minuta, ale my míříme stále výš.
+Takže z toho snad dnes bude bezmála 50 minut, které budou po celou dobu titulkovány.
+Jak jsem řekl již na začátku, rozpoznávání hlasu and strojový překlad jsou vynikající technologie.
+Odvádějí výbornou práci.
+Jsou jako člověk, jen lepší.
+Jen je dát dohromady.
+No, takhle to úplně není.
+Stále potřebujete snímat zvuk, mít vstupní a produkovat výstupní data.
 17:12
-And there is also the little clash.
-The speech recognition recognizes words, but we are ready to translate sentences.
-So what you need to do is you need to segment that stream of words into sentences and then only you can translate them.
-So that actually that actually still requires you to to add one more components, some some segmenter segmentation worker, and you also need to ship all these bits of stream to the various workers along the pipeline.
-So the the two steps just put the two steps together set up is actually this this complicated.
-So this is the overall architecture.
-It is builds upon something which PerVoice developed in in the previous projects, it is called the PerVoice platform.
-And, uh, these components, all these components of speech recognition, and all all that, connect to central point called the mediator, and you have a client. 
-That client connects to that mediator.
-The mediator ships it to the ASR, then to sentence segmenter then to machine translation and then to presentation.
-And the presentation delivers it to the web.
-And we have just received like a confirmation that this single word, this second of sound was processed along the whole pipeline.
-So this, and this runs across the Europe.
-So some of these components run here in this building.
+A pak je tu ještě onen malý rozpor.
+Rozpoznávání hlasu zaznamnává slova, ale my jsme připraveni přeložit celé věty.
+Takže je potřeba proud slov segmentovat do vět, jen pak je můžete přeložit.
+To vás nutí zapojit ještě jeden komponent, segmentátor, přičemž všechny tyto řečové jednotky musíte rozdělit mezi veškeré procesní segmentátory.
+Takhle je ve skutečnosti celý nápad, dát dvě části dohromady, náročný.
+A takhle vypadá celková struktura.
+Vychází z toho, co vyvinul PerVoice v předchozích projektech, takzvaná PerVoice platforma.
+A všechny tyto komponenty pro rozpoznávání řeči se připojí k ústřednímu celku, takzvanému mediátoru, a máte klienta. 
+Který se k mediátoru připojí.
+Mediator se změní na automatické rozpoznávání řeči, pak na segmentátor, pak na strojový překlad a nakonec na prezentaci.
+Která přijde na web.
+A my obdržíme něco jako potvrzení, že tato sekunda zvuku prošla celým procesem.
+Takhle to probíhá po celé Evropě.
+Některé z těchto komponentů operují i v této budově.
 18:16
-Some of them run somewhere in the cloud of PerVoice, some run in Edinburgh, some running cars through it.
-So that is, it is distributed.
-The connections are always open and they are reused across the clients but it uh, uses one particular type of Internet communication, the TCP protocol.
-And that requires that the network is is very broad in in the connection.
-So that it, it does not collect any delay, any lag.
-This is the set up that also includes the wiring.
-So you need to like connect the the machines that the microphones and and connect the presenting system to the screen, and all that.
-And this is the setup for the EUROSAI Congress, where there is six interpreters booth in all the many, on the many six, all the six languages that the humans interpret into.
-And there we are collecting all those and, and choosing which one of them to translate from and then translate to all the remaining 30, something languages.
-So the setup is, are complicated.
-This is the workers connected to the mediator platform, and you see that some of them are busy and some of them are available.
-So this, this is like a big infrastructure.
-So let us start with some of the issues.
-Obviously the network can slow things down.
+Některé z nich operují v úložišti PerVoice, některé v Edinburgu, některé jsou přítomné v autech.
+Takže tak, je to přerozdělené.
+Spojení zůstávájí otevřená a jsou znovu používána mezi klienty, avšak je k tomu potřeba jeden konkrétní typ internetové komunikace, protokol TCP.
+Což si žádá, aby síť byla, co se spojení týká, obří.
+Takže tak, žádná prodleva ani lag.
+Takové nastavení rovněž zahrnuje připojování.
+přístrojů k mikrofonům, prezentace k obrazovce, všechno tohle.
+Je určeno pro EUROSAI kongres, kde je šest tlumočnických kabin pro všech šest jazyků, do kterých tlumočí člověk.
+Zde je všechny nasnímáme a vybereme ten, ze kterého budeme překládat do zbylých třiceti něco jazyků.
+Takže vše nachystat je poněkud náročné.
+Takhle vypadají segmentátory připojené k platformě mediátori, a jak můžete vidět, některé jsou používané a jiné volné.
+Takže je to vskutku rozsáhlá infrastruktura.
+Takže nyní přejděme k možným problémům.
+Celý proces může samozřejmě prodloužit pomalá síť.
 19:43
-So once we face the fact that in Consul where there was some construction or whatever.
-For some reason, the university had a little slower Internet access.
-And that delayed all our processing.
-So immediately, we were not live.
-But we were like seconds or dozens of seconds later than the signal.
-So you you should be actually on stage or very close to the venue, if you want to deliver simultaneous speech reliably.
-For test, this is not a problem.
-But if you want to do it live you you, you should not rely on on the Internet.
-And this was the problem at the best of Prague AI session where I have tested everything.
-It worked perfectly for the demo.  
+Jednou jsme čelili tomu, kdy v budově Rektorátu probíhala rekonstrukce nebo něco takového.
+A Univerzita měla bůhvíproč pomalejší internet.
+Což celý proces zpomalilo.
+Tudíž jsme už nepřekládali v reálném čase.
+Ale s několikasekundovovou prodlevou.
+Takže musíte být opravdu blízko zdroje, aby jste docílili simultánního převodu řeči.
+Při testu to takový problém není.
+Ale když to chcete udělat v reálném čase, neměli byste se příliš spoléhat na internet.
+Což byl problém u Best of Prague AI, kde jsem vše testoval.
+U dema to odvedlo perfektní práci.  
 Uh, unfortunately, even like I have asked a month beforehand and then for the second time, I was not allowed to connect my machine to a wired connection.
 I had to rely on wi-fi.
 And everything worked twice when I was at the venue, I tested it.
