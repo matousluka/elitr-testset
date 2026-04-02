@@ -77,7 +77,7 @@ Takže sem jsme to s přesností dokázali vytáhnout a.
 V úplných začátcích.
 V roce devatenáct set devadesát něco se některé systémy ve svém výkonu přiblížily člověku, a to i u běžné řeči, kde je nekonečné množství projevů či setkání.
 V porovnání jsou systémy však stále někde úplně jinde, ale to se v posledních letech díky neuronovým sítím začalo měnit.
-Takže se u běžné řeči dostaneme někam ke 40 jednotkám mezi dvěma náhodnými anglickými mluvčími.
+Takže se u běžné řeči dostaneme někam ke 40 hovorům mezi dvěma náhodnými anglickými mluvčími.
 U člověka je to při šesti procentech 2017.
 Což připomíná rozpoznávání řeči.
 Pokud ho správně nastavíme.
@@ -94,9 +94,9 @@ Samozřejmě existuje mnoho aspektů, které brát v potaz.
 Ale takhle je to nastavené.
 Máte dva systémy.
 Překlad mluveného slova, který se dokáže vyrovnat člověku, a strojový překlad.
-Ou.
+Tedy.
 Omlouvám se, máte rozpoznávání řeči, které se dokáže vyrovnat člověku, a strojový překlad, který se dokáže vyrovnat člověku.
-Takže to je to, kde jsme si řekli, že se přidáme.
+Takže to je moment, kde jsme si řekli, že jdeme do toho.
 Pojďme.
 Pojďme zde.
 Pojďme zde dosáhnout těchto dvou úspěchů.
@@ -104,66 +104,66 @@ A dát je dohromady.
 Takže to je náš projekt, ELITR.
 No, projekt.
 Snažíme se.
-This will be badly misrecognized  because it does not recognize any names. Well, so in the ELITR project we are putting together speech recognition and machine translation in a highly multilingual setting. I will mention that later on.
-Well, we are coordinating the project, the University of Edinburgh, including us, are experts in machine translation.
-So to say. Karlsruhe is expert in speech recognition.
-We have the the top performing systems.
-If we put them together.
-I 'm sure it will work.
-Great and Perwise is an Italian company.
-They have also been involved in number of European projects before, and they were always in the role of the integrator.
-So they know how to put things together, and they have some baseline systems that we can build up on.
-And then we have a user partner Alfaview, which is remote conferencing system where we would like to translate what people  what people say in the in in the remote calls and we have another user partner.
-And that 's the supreme audit office of the Czech Republic.
-And.
-The Supreme Audit Office.
-They are too afraid of of doing anything bad with with financing.
-So did they did not want to get a single Euro.
-So they are not part of the project, but they are just an affiliated user partner.
-So they are not supported by the European commission.
-Uh, okay.
-So the ambition.
-The ambition is is very big.
-We want to support a Congress that the Supreme audit office.
-Runs this year.
-At the end of May or early June, and the participants of that Congress come from many countries, and in some, they speak 43 languages.
-So this is well beyond the capacity of a uh of simultaneous interpreting by humans, and we want to provide the missing languages.
-So to say, so, there will be six languages spoken at that.
-Congress.
-So English and French and Spanish German, Russian and Czech.
-These are the official languages of the Congress.
-These will be manually interpreted across so that all the six are provided, and we are to provide the remaining 43 other.
-The the remaining that the rest of the 43 languages.
-So this set of EUROSAI languages is larger than the set of the offical EU languages.
-And that is also an important remark, because many of these languages are much shorter off of data.
-So the European commission.
-So the European Union has already put considerable efforts into data.
-Sources for some years.
-Everything from the European Parliament was translated into all the languages.
-All the documents of the European Union are available in all the languages.
-So we have something to train on for the these twenty four languages, but less so for these nineteen additional languages.
-And some of these languages have even so a brand new or unclear status, that no grammar.
-Books were written for them yet.
-So that is that is a challenge on its own.
-Okay.
-Yeah, so the events.
-We know that this all should run.
-So we have already started.
-The project has started last year in January, and in March.
-We have added one extra dry run.
-So in our project plan we have.
-We had like two dry run sessions.
-And then the Congress.
-And we said, well, on the third attempt to do everything.
-Well, so that as the 200 Delegates, or 400.
-If you count the delegate and their and their fellow that the 400 people will see what what we have tested just twice beforehand.
-That is impossible.
-So we have added number of a number of other events.
-The first one.
-What happened in March.
-Last year.
+Tohle se rozpozná chybně, neboť to neumí rozpoznat jména. Takže, v projektu ELITR tedy dáváme dohromady rozpoznávání řeči a strojový překlad, na úrovni hned několika jazyků. Ještě se k tomu dostanu.
+My projekt koordinujeme, na strojový překladu se kromě nás specializují také vědci z Univerzity Edinburg.
+To jen pro ujasnění. Na rozpoznávání řeči jsou experti v Karlsruhe.
+Máme ty nejvíc výkonné systémy.
+Takže když je dáme dohromady.
+Jsem si jistý, že to bude fungovat.
+Dobrá, takže PerVoice je italská společnost.
+Která se v mniulosti rovněž zapojila do několika evropských projektů a pokaždé měla na starost integraci.
+Takže ví, jak dávat věci dohromady, a má několik základových systémů, na kterých můžeme stavět.
+A pak máme partnera Alfaview, což je uživatelský systém pro konference na dálku, kde bychom rádi překládali to, co uživatlé při hovorech říkají. Máme i dalšího partnera.
+A to Nejvyšší kontrolní úřad České republiky.
+A.
+Nejvyšší kontrolní úřad.
+Se bojí dělat něco, co se pojí s ošemetným financováním.
+Takže nechce dostat ani korunu.
+Tudíž není součástí projektu, ale pouze spřátelenou uživatelskou platformou.
+Která nečerpá peníze od Evropské komise.
+Nuže dobrá.
+Takže naše ambice.
+Je opravdu velká.
+Chceme být součástí kongresu, který Nejvyšší kontrolní úřad.
+Tento rok pořádá.
+Někdy na přelomu května a červnam, přičemž účastníci kongresu pocházejí z různých zemí a dohromady mluví 43 jazyky.
+Což je daleko za možnostmi lidského tlumočení, takže bychom rádi zajistili ty zbylé, chybějící jazyky.
+Pro upřesnění, na kongresu se bude hovořit.
+Šesti jazyky.
+Anglicky, francouzsky, španělsky, německy, rusky a česky.
+To jsou ty oficiální.
+Které se budou tlumočit člověkem a my chceme zajistit ostaní.
+Z těch 43.
+Množství těchto EUROSAI jazyků je vyšší než počet úředních jazyků v EU.
+Což nás mimochodem vede k důležitému poznatku, a sice že mnoho těchto jazyků disponuje méně daty.
+Evropská komise.
+Tedy Evropská unie už vynaložila velké úsilí, co se týká dat.
+Už několik let.
+Se vše z Evropského parlamentu překládá do všech úředních jazyků.
+Všechny dokumenty Evropské unie jsou v nich dostupné.
+Takže máme podklady, na kterých můžeme těchto 24 jazyků trénovat, což ovšem neplatí pro těch 19 dalších, tam je toho méně.
+A některé z nich mají dokonce tak nový či nejasný status, že pro ně.
+Zatím neexistují ani učebnice gramatky.
+To je celkem výzva sama o sobě.
+Dobrá.
+O ano, takže to testování.
+Víme, že by to mělo fungovat.
+Takže jsme s projektem začali.
+Už minulý rok v lednu a v březnu.
+Jsme přidali jeden test navíc.
+V našem plánu tak máme.
+Dva testy nanečisto.
+A pak kongres.
+Řekli jsme, že do třetího pokusu dáme všechno.
+Delegátů je 200, respektive 400.
+Když připočítáte jejich asistenty, takže 400 lidí by vidělo něco, co jsme předtím testovali jen dvakrát.
+To nejde.
+Takže jsme přidali další testy.
+První.
+Jsme provedli v březnu.
+Minulého roku.
 It was the student fair of fake, firms like mock mock business companies.
-And there we were testing the old and pre-existing technology what Karlsruhe had and what Pervoice had.
+And there we were testing the old and pre-existing technology what Karlsruhe had and what PerVoice had.
 And we just added our machine translation system from English into Czech. Then we also got in touch with the, I do not know the correct English name of the department, but the Department for interpreting and translation and the faculty of arts of our university.
 [0:12:21]
 And thanks to their support we are able to attend their Mock Conferences where the interpreters are getting trained.
