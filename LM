@@ -146,7 +146,7 @@ A některé z nich mají dokonce tak nový či nejasný status, že pro ně.
 Zatím neexistují ani učebnice gramatky.
 To je celkem výzva sama o sobě.
 Dobrá.
-O ano, takže to testování.
+O ano, takže ty akce.
 Víme, že by to mělo fungovat.
 Takže jsme s projektem začali.
 Už minulý rok v lednu a v březnu.
@@ -162,52 +162,52 @@ Takže jsme přidali další testy.
 První.
 Jsme provedli v březnu.
 Minulého roku.
-Na studentském veletrhu, kde jsme simulovali potenciální situaci.
+Na studentském filmovém veletrhu, kde jsme simulovali potenciální situaci.
 A testovali staré, dříve existující technologie, kterými disponovali v Karlsruhe a PerVoice.
 A přidali akorát náš strojový překlad z angličtiny do češtiny. Pak jsme se spojili s, teď si nevybavím správný anglický název, Ústavem translatologie na Filozofické fakultě Univerzity Karlovy.
 [0:12:21]
 A díky jejich podpoře můžeme navštěvovat simulované konference, při kterých trénují jejich tlumočníci.
 Které nahráváme a analyzujeme, co náš systém s takovým množstvím různých vstupů dovede.
-So this is, this is like similar setting where there is interpreters in the booths, and we are trying to follow what they are saying and complement it with the, with the other languages.
-And then we had the two official events that were planned for our uh, for our project that one was a working group on value added tax, which happened in June.
-And then right after the summer in October, there was another meeting.
-So these two events were like quite close to each other.
-uh, yeah, so not much the development was possible between these two events.
-And then in November, we also added one more.
-I was showing this technology in a little demo on the Matfyz Open Doors Day and I was also trying to present it at Best of Praque AI event.
-And then in February, so very recently, we had a workshop, a dry run of a workshop, which will also run at the Congress.
-And there the purpose of the workshop is to demonstrate not only machine translation, but all other text processing or NLP technologies to the audience, to the lay users, the supreme auditors to illustrate how the NLP tools can help them in their business.
-And we are going to run this workshop obviously in English, and there will be the language barriers so the, uh, the auditors would like to see some translations of, of that.
-So the successful demo was only in November.
-This was the big failure, because the, the wi-fi did not start.
-I will mention that later on.
-And then at the Lang Tools workshop, everything worked well but it was actually still pretty useless for the users.
-And and hopefully you will see in the following slides why this is the case.
-This is the upcoming events.
-There is again the Mock Conferences at Faculty of Art.
-We will again try to see them.
-There is another instance of the Student Firms Fair, we are again trying to uh, to get to that, because these, the high school students from across the Europe provide beautifully non-native speech.
-So they are very hard to uh, to understand for the ASR systems.
-So we, we get the test sets there and we are making it a shared task to understand these high shool students.
-Then, uh, yes, this is the, this is the shared task where we are trying to get also other research institutes to, to process that data the, the high school students.
-And then we will have a second dry run of our workshop.
-Maybe we will add some other things.
-And the main event is early June, uh, in, uh, here in Prague.
-And they are all the Monday seminars, so again at every Monday seminar you will have a chance to, to see these subtitles.
-OK.
-So here is a very brief report on last March event, the Student Firms Fair.
-There was one speaker also that, like we put the mike to, not only the students, Tomáš Sedláček, the Czech economist.
-And you see that it, the the old system worked pretty well including our Czech translations.
-So he was speaking, and it was recognizing him.
-It was recognizing sentences.
-So for about a minute, we had a perfect show.
-And that was it from three days, we had like one minute.
-So we, we started blogging.
-And and we, we blogged about all our successes on our web page.
-Blogging is fun, uh, so, uh, yeah.
-So, uh, with blogging you immediately feel famous.
-It does not really matter, if anyone follows you, just the fact that you posted somewhere that.
-That makes you feel famous, and you can also sometimes improve the reality a bit.
+Takže je to podobné jako v tlumočnických kabinách, přičemž se snažíme nasnímat to, co říkají, a zkomplementovat to pro další jazyky.
+Pak jsme měli dvě oficiální akce, které jsme pro náš projekt naplánovali. První byla pracovní skupina k dani z přidané hodnoty, která se ukutečnila v červenci.
+A hned na to v říjnu proběhlo další setkání.
+Takže tyhle akce od sebe časově nebyly příliš vzdálené.
+A za tak krátký čas se to moc dosáhnout nedá.
+V listopadu jsme pak přidali další.
+Naši technologii jsem demonstroval na Dni otevřených dveří Matfyzu and rovněž jsem se ji pokusil představit na Best of Praque AI.
+Teď v únoru, takže celkem nedávno, jsme měli workshop nanečisto jako přípravu na kongres.
+Jeho cílem bylo laické i odborné veřejnosti ukázat, že nejen strojový překlad, ale i další textové či neolingvistické technologie, mohou být užitečné pro jejich byznys.
+Workshop samozřejmě povedeme v angličtině a samozřejmě někde narazíme na jazykovou bariéru, takže účastníci uvidí i některé překlady.
+V listopadu tak proběhlo jediné úspěšné demo.
+Což byl obrovský neúspěch, neboť nefungovala Wi-Fi.
+K tomu se dostanu později.
+A Lang Tools workshop sice proběhl bez komplikací, ale pro uživatele nebyl moc přínosný.
+Důvod snad uvidíte na dalších slidech.
+Tohle je budoucí akce.
+Opět simulovaná konference na Filozofické fakultě.
+Opět se s nimi, doufám, setkáme.
+Pak je tu ještě další věc na studentském filmovém festivalu, k níž bychom se chtěli dostat, protože takové množství z Evropy nabízí celou řadu projevů v nemateřském jazyce.
+Takže pro ASR systémy představují celkem oříšek.
+Zde tedy získáme testová data a vytvoříme z nich sdílený úkol, abychom studentům porozuměli.
+Pak, o ano, tohle je sdílený úkol, do něhož se snažíme zapojii další výzkumná zařízení, abychom data od studentů zpracovali.
+Následovat pak bude druhý workshop nanečisto.
+Možná přidáme ještě další.
+Hlavní akce je pak v červnu, tady v Praze.
+Jsou to všechny pondělní semináře, takže na každém z nich budete mít možnost si zobrazit titulky.
+Dobrá.
+Takže zde je velmi krátké shrnutí březnové akce, tedy studentského filmového festivalu.
+Jedním z účastníků, kterému jsme dali prostor, nebyl jako obvykle student, nýbrž Tomáš Sedláček, český ekonom.
+A jak vidíte, starý systém odvedl poměrně dobrou práci, a to u překladů do češtiny.
+Zatímco on hovořil, systém rozpoznával.
+Věty, které říkal.
+Zhruba minutu jsme měli výbornou podívanou.
+A to bylo pro ty tři dny všechno, byla to opravdu jen minuta.
+Takže jsme začali psát blog.
+O všem, co se nám povedlo, jsme psali na webu.
+Psát blog je zábava, ano.
+Hned se cítíte slavní.
+A je jedno, jestli vás někdo sleduje, jen ta samotná skutečnost.
+Z vás dělá hvězdu, která může aspoň trochu vylepšit svět kolem ní.
 So, uh, yeah, well, we do not do photoshopping of our demos.
 The only thing what we do is we select the bits where it worked.
 So from those two day events it was one minute, and but we are growing bigger.
