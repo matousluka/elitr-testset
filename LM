@@ -269,48 +269,48 @@ A tyto pokusy prostě a jednoduše zatížili WiFi tak.
 Že mi to přestalo fungovat.
 Takže se za celou akci nezaznamenalo vůbec nic.
 Tím pádem nesmíme spoléhat na bezdrátovou síť.
-Then we also had issues where everything went well, except the the final presentation was like filling buffers off web-browsers.
-So it was not showing properly on the end user devices.
-Everything was OK until the final presentation point.
-And this is another, this is like a miss configuration error like if you are juggling with with the setups.
-It is easy to make a mistake.
-So in one of the sessions, we were observing some horrible delay gaining or growing.
-And the reason was that we are in our own ASR system, because we are also experimenting with that.
-And we ran it locally but, accidentally, we were first sending the sound over wi-fi to Italy, and then sending it back to our place to recognize it.
-And only then we were, we were recognizing it.
-So, this double double network load has killed the, has caused the delay.
-Next time we, we like recognized it on the spot and and the the problem was gone.
-OK.
-Now, sound acquisition.
-You may recognize some of uh, one of our colleagues here.
-And the problem is if if you have this microphone, that chest microphone, and you put it here.
+Pak jsme zaznamenali takový porblém, kdy vše šlo hladce až na konečnou prezentaci, která zahlcovala vyrovnávací paměť webových prohlížečů.
+Jinými slovy se na koncovém zařízení nezobrazovala správně.
+Všechno bylo v pohodě až po konečnou prezentaci.
+A tohle je další chyba, něco jako chybějící konfigurace, jako kdybyste s nimi žonglovali.
+Je jednoduché udělat chybu.
+Při jednom testování jsme pozorovali značné prodlevy.
+Kde důvodem bylo naše experimentování se systémem rozpoznávání řeči.
+Sice jsme ho prováděli lokálně, ale omylem jsme zvuk nejdříve posílali přes WiFi do Itálie a k rozpoznávání pak zpátky k nám.
+Jen pak se to rozpoznávalo.
+Tudíž tento dvojí přenos zapříčinil prodlevu.
+Příště se vše rozpoznávalo už na místě, čímž se problém vyřešil.
+Dobrá.
+Teď přichází na řadu získání zvuku.
+Zde si jistě povšimnete jednoho z našich kolegů.
+Problém nastane, když máte mikrofon, který umístíte sem, na hrudník.
 22:18
-And then you talk to the slice like that.
-The microphone does not really get your ways.
-So that is, that is one problem.
-This is another thing right now, unfortunately, we had to switch off this chest mike and I am relying on this mouth mike.
-We wanted to extend this test.
-So based on three minutes of testing, the error in recognizing English and Czech is several points lower, if you use the mouth microphone compared to the chest microphone.
-So that is just the distance from the mouth and the movement of the head that makes measurable measurable difference.
-So we are relying on the on the better on the head microphone.
-Yeah, this is a tip for singers, for vocalists.
-You have to hold the mike properly, you have you have not, you must not put it in your mouth almost.
-You must not put it too far away from your mouth.
-And also, if you stand in front of the loudspeakers, the reverberations, will will totally kill the signal that you are receiving through the mike.
-So this is what has happened to us during the uh, the Student Firm Fairs, when the students were were just roaming around, and they entered the area in front of the loudspeakers.
-And suddenly there was no way to to recognize them.
-OK.
-Then, there is cables.
-You have to plug the cables properly and one of these settings in the conferencing room for the interpreters, we were able to get the signal only when one of the connectors here was not fully plugged in.
+A pak mluvíte takhle, s odvrácenou hlavou.
+Mikrofon je tím pádem k ničemu.
+Takže to je jeden problém.
+Pak je tu další věc. Bohužel jsme teď museli vypnout mikrofon na hrudníku a spolehnout se pouze na ten u pusy.
+Chtěli jsme tento test protáhnout.
+Neboť na základě oněch tří minut testování se zdá, že chybovost v rozpoznávání angličtiny a češtiny je nižší při umístění mikrofonu k puse místo na hrudník.
+Takže jen vzdálenost od pusy a pohyby hlavou dokážou udělat znatelný rozdíl.
+Spoléháme se proto na lepší mikrofon, ten u pusy.
+Což je mimochodem rada pro zpěváky, vokalisty.
+Držte pořádně svůj mikrofon, nesmíte si ho dát moc blízko puse.
+Ale ani moc daleko.
+A pokud stojíte u reproduktorů, ozvěna vám naprosto zruší signál, který přes mikrofon získáváte.
+To je přesně to, co se nám stalo na studentském filmovém festivalu, kde studenti korzovali a vstupovali do prostoru u reproduktorů.
+Což vyústilo v náhlý problém je rozpoznat.
+Dobrá.
+Pak jsou tu ještě kabely.
+Které musíte pečlivě zapojit, přičemž jednou se nám v tlumočnické kabině stalo, že jsme měli signál, jen když jeden z konektorů nebyl úplně zapojený.
 23:40
-Then, there is cables.
-You, have to plug the cables properly.
-And one of the settings in the conference room for the interpreters, we were able to get the signal only when one of the connectors, here, was not fully plugged in.
-The reason is that we were like misusing the connections so once once we brought a proper sound card, it was able to recognise which pin of that connector has what, but without a proper sound card, with just the build in sound card of standard notebook, you have to like misalign the pins of that connector to get the signal.
-So there was an hour or two of debugging until we've figured out how to connect the input, so that's we're learning.
-So then there is the volume setting along the along the pipeline.
-So if you have a wireless microphone.
-It has a receiver, and there is volume control at the receiver, and then you have a sound card, and that also has some volume control and it also has some button, like two buttons.
+Pak jsou tu ještě kabely.
+Které musíte pečlivě zapojit.
+Přičemž jednou se nám v tlumočnické kabině stalo, že jsme měli signál, jen když jeden z konektorů nebyl úplně zapojený.
+Důvodem bylo to, že jsme podcenili spojení. Se správnou zvukovou kartou jsme byli schopní odhalit, která část konektoru k čemu patří, ale s obyčejnou zvukovou kartou, která je zabudovaná v notebooku, musíte tyhle části konektoru zpřeházet, abyste měli signál.
+Takže to zabralo hodinu dvě oprav, než jsme přišli na to, jak to správně zapojit, jinými slovy se pořád učíme.
+Pak je tu problém s nastavením hlasitosti.
+Pokud máte bezdrátový mikrofon.
+Tvoří ho přijímač s ovládáním hlasitosti, a zvuková karta taktéž s ovládáním hlasitosti, takže tu jsou dva čudlíky.
 So line level or mic level that is one button and padding on or off.
 So you have to that's like four options, at least just for the buttons, and then for the for the for the knobs, and you have to set this properly otherwise the sound can be the quiet, or the sound will be too too high, uh the the volume will be too high, and someone along the pipeline will clip it and then you don't get the frequencies, and the ASR will not work.
 So you need to carefully track the signals step by step, experienced people know. 
