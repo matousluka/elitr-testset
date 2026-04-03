@@ -186,7 +186,7 @@ Důvod snad uvidíte na dalších slidech.
 Tohle je budoucí akce.
 Opět simulovaná konference na Filozofické fakultě.
 Opět se s nimi, doufám, setkáme.
-Pak je tu ještě další věc na studentském filmovém festivalu, k níž bychom se chtěli dostat, protože takové množství z Evropy nabízí celou řadu projevů v nemateřském jazyce.
+Pak je tu ještě další věc na studentském filmovém festivalu, k níž bychom se chtěli dostat, protože takové množství z Evropy nabízí celou řadu projevů v jazyce, který pro ně není mateřský.
 Takže pro ASR systémy představují celkem oříšek.
 Zde tedy získáme testová data a vytvoříme z nich sdílený úkol, abychom studentům porozuměli.
 Pak, o ano, tohle je sdílený úkol, do něhož se snažíme zapojii další výzkumná zařízení, abychom data od studentů zpracovali.
@@ -311,43 +311,43 @@ Takže to zabralo hodinu dvě oprav, než jsme přišli na to, jak to správně 
 Pak je tu problém s nastavením hlasitosti.
 Pokud máte bezdrátový mikrofon.
 Tvoří ho přijímač s ovládáním hlasitosti, a zvuková karta taktéž s ovládáním hlasitosti, takže tu jsou dva čudlíky.
-So line level or mic level that is one button and padding on or off.
-So you have to that's like four options, at least just for the buttons, and then for the for the for the knobs, and you have to set this properly otherwise the sound can be the quiet, or the sound will be too too high, uh the the volume will be too high, and someone along the pipeline will clip it and then you don't get the frequencies, and the ASR will not work.
-So you need to carefully track the signals step by step, experienced people know. 
-I remember the the colleague from the PerVoice company who came for the student fares for the first time and there we still were struggling with getting the signal right.
-And he like followed from the mic with the headphones always connected it ??? phones  and said, OK it's good here, it's good here and step by step, he managed to deliver the the right volume to the machine so that's you have to do it step-wise, and it can fail at any point.
-Yep.
-So then ASR quality.
-So once you have delivered the possible the best possible signal, what does the machine recognize from that.
-So this is an example from the from the student, the high school students.
-The speaker wanted to say something like you have a bottle?.
-Oh, yes, we are situated in the heart in the heart of České budějovice.
-But in reality, this is high school student, so he said, "you have a bottle? Oh, yes, we are situated in hard of České budějovice", so there was serious mispronunciation, and there was also high level of background noise, because that is fair, so there is stands with music playing, and we are just behind a little a little wall, hoping to get some some shelter from from all that noice.
-So if you are unexper-, if you are a person and you are in this here in this in this harsh conditions, then you probably understand something like you have a bottle, because you are not expecting the the student to talk about a hotel on the boat, "Oh, yes, we are situated in the heart of", and then he would recognize that some cities being mentioned, but if he is from Spain, he would not know that České budějovice, you know, is a is a is a Czech city.
-The standard ASR would deliver something like, oh, yes, the the of the that is the the few words the ASR can spot in the in the noise signal if the ASR is is noise resistant, if it can somehow cancel the noise, then it will do something "you have somebody to oh, yes, we are situated in hard, which is can we do?" because it does not know the the name of the Czech city.
-And if we have a future ASR or a person in the in the middle actually, and then we would get the the proper recognition of the sentence.
-So this is this is all the problems that that we are facing when we are trying to transcribe a non-native speakers.
-This is summary across the recordings that we have made there, so remember, the word" error" rate for humans is around six or four percent, here, the Google system, Google ASR had error rate of of ninetyish.
-Edinburgh system also, and car system was actually the best one around 40, still ten times worse than what humans do.
-And this is this is on the recordings were all the systems have produced any output whatsoever.
-If we apply if we if plot the same figures but we count 100 percent of errors as the the the score if no output is delivered then Google is so much worse than Edinburgh so Edinburgh was was better, was not like giving up so frequently.
-And Carlos was still still the best system, but still the the car system is ten times worse than the humans and that's then what is reported in the literature.
-Obviously, this is hard conditions.
-So this is background, noise, non-native speakers, well, we are not yet quite professionally in the recording so we just misaligned, the mics, and people like spoke too loud and we did not twist the knobs properly.
-So it is it is very harsh conditions but this is the the the reality that that you can get.
-So this is the best recording according to the ASR quality, and there are things like, "why do you wear those so high heels" instead of "why do you wear those high heat the high heels".
-And deals, there is "I know one really good star", instead of "store", "that deals with the sale of free down food", instead of "free time, footwear", or something like that, so it is it is the totally wrong.
-Ok, so what is our plan, given this.
-So we are definitely going to retrain our ASR models, and I ideally we would like to use non native speech corpora, common voice by Mozilla is one of this is that that can help.
-And we have another fallback uh, the thing to do.
-We would like to follow interpreters instead of the floor, because each of the interpreters will sit in a booth with limited noice from surroundings with better microphone.
-So we have more control of the recording, we can also talk to the interpreters and explain to them that they are being recorded and processed in particular way, and we also have the chance to adapt to them.
-So we are trying to get their contacts.
-We have still few months to come.
-And even if they are non native, we should be able to adapt to their particular speech.
-So we would ask them to do as uh, well, few minutes, uh possibly up to an hour of of recording we would pay them to whatever, read some text or or interpret something.
-And then we would to create a training dataset for that particular person.
-And then obviously, we are going gather in domain dataset and regularly evaluate.
+První je linková úroveň nebo úroveň mikrofonu, která je buď zapnutá, nebo vypnutá.
+To jsou vlastně čtyři možné kombinace, přinejmenším pro čudlíky a knoflíky, a vše je potřeba pečlivě nastavit, jinak může být zvuk tichý, anebo naopak příliš hlasitý, kdy pak nedosáhnete potřebné frekvence, aby rozpoznávání řeči fungovalo.
+Takže to musíte brát signál po signálu, lidé z oboru to znají. 
+Vzpomínám si na jednoho kolegu z PerVoice, který na studentský festival poprvé, zatímco my jsme pořád měli problém správně zachytit signál.
+Tak vzal mikrofon připojený ke sluchátkám a říkal: „OK, tady je to v pohodě, tady také“, až postupně dokázal zajistit tu nejlepší hlasitost, takže to musíte dělat krok po kroku, i když to může kdykoliv selhat.
+Jo jo.
+Pak také samotná kvalita rozpoznávání řeči.
+Co rozpozná stroj, když mu doručíte ten nejlepší možný signál?
+Tohle je příklad od jednoho vysokoškoláka.
+Mluvčí chtěl říct něco jako: „Máte lahev?“.
+„O ano, nacházíme se v samotném srdci Českých Budějovic.“.
+Ale ve skutečnosti je to vysokoškolák, tudíž řekl: „Máte lahev? O ano, nacházíme se v samotném srdci Českých Budějovic“, jinámi slovy komunikační šum a hluk v pozadí, protože je na zrovna festival, takže tam jsou stánky s muzikou, a my byli jen za tenkou zdí a doufali, že před tím vším hlukem najdeme aspoň nějaký úkryt.
+Pokud jste nezkuše-, pokud se nacházíte v tak nepříznivých podmínkách, pak zřejmě uslyšíte něco jako: „Máte lahev?“, jelikož nepředpokládáte, že vysokoškolák bude mluvit o hotelu na lodi, „O ano, nacházíme se v samotném srdci“, přičemž mu dojde, že se hovoří o nějakých městech, ale pokud je třeba ze Španělska, nebude vědět, že České Budějovice jsou české město, chápete.
+Běžně by rozpoznávání řeči doručilo jen ta slova, která v šumu dokáže zachytit, pokud mu umí vzdorovat, a když ho umí potlačit, pak vyplivne něco jako: „Máte love, o ano, nacházíme se v samotném srdci čest bude víc?“ neboť nezná názvy českých měst.
+Modernější systém, nebo pokud mluvčí stojí ve středu, by měl dosáhnout správného zachycení věty.
+Takže tohle všechno jsou problémy, kterým čelíme při transkripci řečníků, kteří nemluví mateřským jazykem.
+Tohle je shrnutí nahrávek, které jsme pořídili, nezapomeňte, že podíl chybných slov o člověka je kolem šesti či čtyř procent, zatímco u systému od Googlu je to kolem 90.
+Systém vyvíjený v Edinburgu taktéž a systém v autech, který je nejlepší, zhruba 40, což je ale pořád desetkrát horší než u člověka.
+Čerpáme z výstupů a nahrávek, které tyto sytémy vyprodukovaly.
+Pokud bychom započítali úplně všechny typy chyb, například když výstupní data chybí úplně, pak by byl Google mnhoem horší než Edinburg a Edinburg by byl lepší, protože to tolikrát nevzdal.
+A systém v autech by byl stále nejlepší, ale pořád desetkrát horší než člověk, což je ostatně zdokumentováno v literatuře.
+Tohle jsou samozřejmě nepříznivé podmínky.
+Hluk v pozadí, jazyk, který není mateřský... no, zatím nejsme v nahrávání takoví profesionálové, takže se nepovedlo seřídit mikrofony, řečníci hovořili příliš nahlas, neboť jsme pečlivě neotáčeli knoflíky.
+Takže podmínky opravdu nepříznivé, ale i taková může být realita.
+Tohle je kvalitou nejlepší záznam, kde je slyšet něco jako: „Proč nosíš boty o tak vysokém podpatku?“ místo „Proč v takovém vedru nosíš boty na podpatku?“.
+A nabídka, kde zazní: „Znám jeden podchod“, místo „obchod“, "kde se prodávají drogy", instead of "boty", nebo něco takového, jinými slovy úplně špatně.
+Takže co po tomhle všem máme v plánu.
+Rozhodně znovu zkusíme vytrénovat naše modely, tentokrát ideálně cizojazyčnými korpusy, pomoct by nám v tom mohl Mozilla Common Voice.
+A pak je potřeba udělat ještě něco.
+Rádi bychom pracovali jako tlumočníci, kteří sedí v odhlučněné kabině s lepším mikrofonem.
+Tudíž máme větší kontrolu nad pořizováním záznamu a samozřejmě si můžeme promluvit i s tlumočníky a vysvětlit jim, že je nahráváme a analyzujeme pomocí určitých kritérií a že se přizpůsobíme jejich zvyklostem.
+Takže se na ně nyní pokoušíme získat kontakt.
+Máme ještě pár měsíců.
+A když netlumočí mateřským jazykem, měli bychom být schopni se přizpůsobit jejich projevu.
+Takže bychom je požádali o několikaminutovou až hodinovou nahrávku a zaplatili jim, cokoliv, aby něco přečetli nebo odtlumočili.
+A pak vytvořili tréninkový dataset pro toho konkrétního člověka.
+A nakonec shromáždili do centrálního datasetu, který bychom průběžně vyhodnocovali.
 So does the ASR.
 We get the text, so what do we, what do we expect now, with the translation there are all the standard translation errors that you know where well.
 So here is one example, a sentence, which was actually recognized perfectly.
