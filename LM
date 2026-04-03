@@ -347,25 +347,25 @@ Máme ještě pár měsíců.
 A když netlumočí mateřským jazykem, měli bychom být schopni se přizpůsobit jejich projevu.
 Takže bychom je požádali o několikaminutovou až hodinovou nahrávku a zaplatili jim, cokoliv, aby něco přečetli nebo odtlumočili.
 A pak vytvořili tréninkový dataset pro toho konkrétního člověka.
-A nakonec shromáždili do centrálního datasetu, který bychom průběžně vyhodnocovali.
-So does the ASR.
-We get the text, so what do we, what do we expect now, with the translation there are all the standard translation errors that you know where well.
-So here is one example, a sentence, which was actually recognized perfectly.
-I know which sentences are recognized perfectly, so I know what to avoid when I 'm running demo.
-This is also different from the from the users of our system, they will simply speak as they are used to.
-If I want to showcase what our system is doing I will avoid named entities, I will avoid strange constructions, I will have like fluent newspaper-like style of sentences, and then all the all the systems will successfully recognize me.
-So this is one of the the cases.
-But it is much more difficult to to ask if you do not have any clue, and yet, the translations, both into German, two sample languages were wrong, the if was translated as ob or as da.
-And that is that distorts the distorts the the sense of of that.
-So my guess is that maybe in English, you would, in in Native English, you would actually say this a little bit differently.
-And then there might be more explicit clue in the source sentence.
-I 'm not saying that the sentence in English is wrong.
-I 'm saying that indeed training data, which is from news or maybe books, or or or Euro legislation.
-There is this like domain mismatch and even even if it is not domain mismatch.
-This is is genuinly ambiguous conjunction, and it is difficult for the machine to guess the meaning.
-So if you are closer to the training data, then you will see it will work better.
-If if it is a difficult, an ambiguous expression.
-You will have these problems till like for ever.
+A nakonec všechna data shromáždili do centrálního datasetu, který bychom průběžně vyhodnocovali.
+Jak to dělá systém rozpoznávání řeči.
+Máme text a teď co očekáváme od překladu, zde jsou všechny překladové chyby, které jistě také dobře znáte.
+Tady je například věta, která byla rozpoznána perfektně.
+Já vím, které byly rozpoznány perfektně, neboť také vím, čeho se při demu vyvarovat.
+Což je mimochodem odlišné od chování uživatelů, kteří jednoduše hovoří tak, jak jsou zvyklí.
+Když chci předvést, co systém zvládne, chci se také při tom vyhnout vlastním jménům, zvláštním slovním obratům, chci mluvit plynule, tak mě rozpozná každý systém.
+Takže tohle je jeden z případů.
+Ale je mnohem těžší se zeptat, když vůbec nemáte ponětí, a překlady se, oba do němčiny, u dvou testových vět, pokazí, kdy se „pokud“ přeložilo jako „ob“ nebo jako „da“.
+Což úplně překroutí význam.
+Takže předpokládám, že rodilý mluvčí by to řekl trochu jinak.
+Čímž věta vyzní přesněji.
+Neříkám, že taková věta v angličtině je špatně.
+Říkám, že data, na kterých systém trénujeme, pocházejí z novin nebo snad i z knih či evropských legislativních dokumentů.
+Což je naprosto něco jiného, i když to tak ve skutečnosti úplně není.
+Prostě se jedná o nejasná spojení, u nichž má stroj problém určit význam.
+Takže čím blíže jste datům, na kterých se trénuje, tím jsou výsledky lepší.
+Pokud se však jedná o nejasnou frázi.
+Budete mít tyto problémy až do skonání světa.
 Yeah, here is some some just misunderstanding or well, as the it was out of vocabulary, the machine translation system ran out of vocabulary: "you can be reported after some profanities".
 So if you if you say something bad on your website, then they will flow like block you.
 And that was the most translated as professional things.
