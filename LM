@@ -366,35 +366,35 @@ Prostě se jedná o nejasná spojení, u nichž má stroj problém určit význa
 Takže čím blíže jste datům, na kterých se trénuje, tím jsou výsledky lepší.
 Pokud se však jedná o nejasnou frázi.
 Budete mít tyto problémy až do skonání světa.
-Yeah, here is some some just misunderstanding or well, as the it was out of vocabulary, the machine translation system ran out of vocabulary: "you can be reported after some profanities".
-So if you if you say something bad on your website, then they will flow like block you.
-And that was the most translated as professional things.
-That is because the profanities, were not in the in the vocabulary of the machine translation system.
-So the resorted to some expressions.
-Okay, ah, the problem in spoken language translation is that the ASR errors get kind of multiplied in machine translation.
-If you have an error in speech recognition.
-Then the error will be a few edits a single word similar in shape the what I have said.
-But then you take this single word and you translate it, and then the shape of the word like totally changes.
-So, machine translation takes all the wrong words from the ASR as fully of trustworthy and happily reorders a sentence to make it the best possible sentence, including those wrong words, and there is no information about the confidence, neither from the ASR system, nor from the machine translation system.
-So the so the user will be just left with the sentence, which sounds perfectly natural love mention some strange entities, which were never never mentioned never part of the talk, because they come they come from an error.
-So here is an example, "and the goal of my thesis is to fold", and that was "two fold".
-So instead of "two fold", the ASR recognizes "to fault", that is the natural like misrecognition.
-The empty output was, "and the goal of my theory", instead of "thesis", "is to fall apart".
-So that's definitely not what what we were after in this system, yeah.
-So this is this is what I would probably translated too if I was translating it.
-I just wanted to highlight this "two fold" to misrecognized as "to fold" was translated as "rozdrobit se", to fall apart.
-And that is totally out of out of the scope.
-Ok.
-So what we have, what what is our plan for the mission translation, data, data data, and then maybe little bit of models.
-So we are definitely going to gather more parallel data.
-University of Edinburgh is working on that.
-We are going to gather more target side, monolingual data and back translate, that's for the domain adaptations.
-So this is auditing domain.
+Dobrá, tady je pak jedno nedorozumění, respektive stroji došla slovní zásoba: „Při nevhodném chování můžete být nahlášeni“.
+Takže pokud na webu použijete něco nevhodného, můžete být zablokováni.
+Nejvíce se překládaly profesionální věci.
+To proto, že tyto nevhodné výrazy nejsou obsaženy ve slovní zásobě stroje.
+Což vyústilo v určité výrazy.
+Dobrá, takže, problémem u překladu mluvené řeči je, že se chyby rozpoznávání řeči u strojového překladu poněkud násobí.
+Pokud se u rozpoznávání řeči objeví chyba.
+Tak slovo v úseku sice zůstane takové, jaké jsem zamýšlel.
+Ale pokud ho budeme chtít přeložit samo o sobě, stane se z něj něco úplně jiného.
+Takže strojový překladač všechna tato chybná slova bude považovat za důvěryhodná a nadšeně z nich poskládá tu nejlepší větu, u které nemáme jistotu ani z pozice rozpoznávání řeči, ani strojového překladu.
+Tudíž uživatel sice získá větu, která zní naprosto přirozeně, ale bude plná podivností, o nichž nikdo nikdy nemluvil a které pocházejí pouze z těchto chyb.
+Zde je příklad: „Cílem mé teze je se rozdrobit“ oproti původnímu: „Cíle mé teze jsou dva“.
+Takže místo „jsou dva“ systém rozpoznal "je se rozdrobit", což je běžná chyba v rozpoznávání.
+Výstupem tak bylo: „A cílem mé teorie“ místo: „teze“, „je se rozdrobit“.
+Což určitě není to, co jsme zamýšleli, no.
+Kdybych překládal já, asi bych přeložil takhle.
+Jen jsem chtěl upozornit na „jsou dva“ přeložené jako „rozdrobit se“.
+Což je úplně mimo.
+Dobrá.
+Takže co tu máme, jaké jsou naše plány pro překladatelskou misi, data, data, data a pak možná pár modelů.
+Určitě se pokusíme získat více paralelních dat.
+Pracuje na tom Univerzita v Edingburgu.
+My se zase pokusíme získat více výstupních dat z jednoho jazyka a pak zpětně překládat pro větší přizpůsobivost.
+Takže takový kontrolní mechanismus.
 35:12
 @ 0:34:50
-So what we have, what what is our plan for the machine translation: data, data, data, and then maybe a little bit of models.
-So we are definitely going to gather more parallel data, Edin, uh, university of Edinburgh is working on that.
-We are going to gather more target-side monolingual data and backtranslate, that's for the domain adaptations, so this is auditing, uh, domain, so we would like to, uh, to focus on all these materials
+Takže co tu máme, jaké jsou naše plány pro překladatelskou misi, data, data, data a pak možná pár modelů.
+Určitě se pokusíme získat více paralelních dat, pracuje na tom Univerzita v Edingburgu.
+My se zase pokusíme získat více výstupních dat z jednoho jazyka a pak zpětně překládat pro větší přizpůsobivost, takže takový kontrolní mechanismus, takže bychom se rádi zaměřili na všechny tyto materiály.
 Uh, they are hardly parallel, some of them are, but not too many, and especially not for, uh, those, uh, like 19, uh, non-EU languages that we are also, uh, oh, aiming at.
 So hopefully our, uh, baseline systems in the back translation will make some sensible output from that, and hopefully we'll be able to improve the translation quality.
 We'll create indomain test sets, and we will regularly evaluate on them.
