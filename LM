@@ -412,57 +412,57 @@ Pak je tu integrace rozpoznávání řeči a strojového překladu.
 Jak jsem již řekl, rozpoznávání řeči se orientuje na jednotlivá slova, zatímco strojový překlad očekává uzavřené, gramaticky správné větné celky, takže je několik možností, jak tuto propast překlenout.
 Můžeme se pokusit výstup z rozpoznávání řeči opatřit interpunkcí, což nazýváme segmentací, můžeme naprogramovat rozpoznávání řeči, aby správnou interpunkci samo odhadovalo, takže by strojový překladač nepracoval pouze se sekvencí slov, ale se sekvencí slov o velkých písmenech a interpunkcí.
 Na čemž ostatně pracuje jeden z mých studentů.
-And we can also try something which is one of the research goals of our project, uh, that's fully end to end spoken language translation, uh, with one neural system that, uh, gets the sound in one language and produces, uh, the translation in the, uh, in the target language right away, so that's again part of, uh, Peter's, uh, thesis.
-So the segmenter, given a stream of words, guess punctuation, casing, we use, uh, uh, <UNKNOWN>'s tool, so, someone's tool.
-Unfortunately, the speech information is no longer accessible to this tool, so it has just the sequence of words, and based on the sequence of words, it is guessing sentence boundaries.
-And as, uh, one of, uh, my colleagues, uh, from the <UNKNOWN> specialists said, uh, it's actually doing very good job given that it doesn't have any information about the pauses, about the intonation, so it's surprising how well it can predict the sentence boundaries with this, uh, poor information.
-Uh, so, still, it is it is far from perfect, so there're many errors.
-Uh, there is also another tool, which would consider the intonation and and delays, but we haven't had time to integrate it, so if someone would like to, uh, play around with that we will be happy to, uh, uh, to, uh, to get any help there.
-So, uh, <UNKNOWN> has trained this, uh, this, uh, segmenter tool, on, uh, <UNKNOWN> data, about four million sentences, and, uh, here is the precisions and recalls for various punctuation marks that we are inserting, uh, and h'am, uh, highlighting the recall of, uh, period, because that is critical to to identify sentence boundaries, uh, so, uh, it's, uh, 70 to to 80 percent, which is reasonable, uh, uh, if you look at it as a number, but it is still far from sufficient for, uh, practical, uh, use.
-Uh, okay.
-So, uh, here is an example, uh, of an error in, uh, in, uh, in the, uh, in the, uh, in the segmentation, so errors in precision, uh, lead to confusing empty output, so here the speaker said something like "all too well", uh, that was part of a longer, uh, uh, longer, uh, phrase, and, uh, the ASR plus segmenter, uh, put a full stop between this, like in the middle of this phrase, uh, leading to the output "This approach does not generalize all too", and then separate sentence, "Well, so to somehow conclude that the whole talk", so here the semantics is obviously changed, eh, quite bit, uh, this is exactly the case where the machine translation would, uh, one by one receive the first sentence, and then the second sentence, and it would have no way to recover from, uh, from the full stop, which should not be there in the first place.
-So, uh, there the two sentences would get, uh, like, beautiful, uh, but, uh, the, yeah, the message would be distorted.
-Errors in recall, uh, make, uh, too much content unstable, and we'll explain this, uh, on on on the following slides.
-Uh, yeah.
-So, here is another, uh, technical thing, uh, the the messaging between the speech recognition and and spoken English translation.
-Uh, so it's, if it is the online speech recognition, uh, we are receiving text messages, uh, but these text messages of strings of words are not related to sentence boundaries.
-Uh, so in the first run, and this is what we, uh, what we were mostly seeing in in March, or at all the sessions, uh, that were the tests for for the Supreme Audit Office, we were receiving, uh, these messages, so this is the first message, the second message, third message and fourth message, and we were directly sending these messages, uh, to the machine translation, um, so, uh, the first message was "You should thank there have", and there, that's still unfinished sentence.
-Uh, machine translation system, given this input, decided to totally omit the first sentence, because the first sentence, like, doesn't fit there, the machine translation system is trained to translate full sentence into full sentence, so some half a sentence, uh, here, let let's drop it, so it said just, just "Děkuji", že "Thank you".
-And then, uh, the, uh, this is an extension of that message, so the ASR sent again, uh, the same prefix, and then it added the extra words that came in the meantime.
-Uh, this is probably the best translation that the MT could have delivered for that, and then the ASR sent something which we call the confirmation message, so the ASR says, well, "I will not bother with these three words anymore, 'You should thank', I'll just, uh, I'm fin finalizing these, and from now on, I will only send you the rest, 'There have been many revolutions'".
-So here is a single message, "You should thank", so that's one complete sentence, and a beginning of another sentence, and we have translated it as as if it was one sentence, and that's that's just wrong, and then, uh, the next message stars in the middle of the sentence already, and we are again feeding it as if it was a complete sentence, so there is, uh, like, the sentence boundaries are totally unobserved by our approach, and that that kills everything, it it emits, uh, it it upgrades all of these partial sentences into full sentences, but that's not related to the, uh, uh, to what the, uh, to what the people said.
-Okay, so if you put together, uh, the, uh, the ASR and MT better, and we did it and I'll show you on the following slides, then you still need to present somehow the result, so that's we're slowly coming towards the the final stage, and still, it can totally kill the the show.
-Uh. Sss.
-If you have a font too small, such as in the subtitles, if they were a little bit smaller, it, they will not be of any use for you at all.
-So you need to very carefully balance like how much content you put somewhere, and if the font would be, uh, legible, if it still, if it's legible for people in the first row, and for the people in the last row, if they have to rely on the cell phone and suddenly they have a different shape, a different rectangular area where where the, uh, translations and transcriptions and appear, and this heavily affects how much information we can send them, and we have to dynamically decide what what to sent them and and what not.
-Uh, for example then, if if if this text flickers too much, if the words change too quickly, you cannot read them.
-Uh, so that is one of the reasons why we have not employed, uh, the fully, uh, neural network ASR system so far, because they are trained to operate on window that moves in time.
-Uh, so, uh, eight seconds, uh, at one go are always recognized, and the beginning can change, so, uh, imagine eight seconds of my speech back, and still like redeciding what is the first word.
-As mostly the words do not change, but sometimes they do, and if you have this long piece of text, and it, like, swaps here and there, uh, there and back on on various, uh, places in in various words, you do not know how to follow that, it's it's like unstable text.
-So we are working on this, uh, on this integration.
-And, uh, I wanted to highlight, that this presentation must be tested on stage, you cannot test it in simulation, like, uh, the the sizing of the text, the visibility from various areas, that all can, uh, um, kill it, can negatively affect it in such a way that it's not usable at all.
-If you have ever ordered something from an e-shop, and it came, but it was like the wrong size, either too small or too big, then you know what I'm talking about.
-If, in in an e-shop you have a picture of what you're buying, but the picture is out of proportion, you you don't know if you're getting this big teddy bear, or or this tiny teddy bear, uh, so it's it can be of wrong size, and that's the same thing as, uh, here for, uh, for the subtitles.
-So here is, uh, one, uh, of the views that, uh, you have been, maybe you have been watching on your machines.
-Uh, this is mainly for showcasing that we can run the translation into many target languages, uh, so we are showing two lines of subtitles, uh, in, uh, ten languages at the moment, and this will be 40, uh, 43.
-Uh, this is good to demonstrate that the system is following me, and it can create, uh, falsely positive impression, uh, because if you're following me, and if you understand my my language, then, uh, you cannot, you can no longer read carefully  what is in the in the subtitles, and you will only observe the right keywords there, so if I say something about subtitles, and you will see "titulky" in Czech then you will notice, oh, great, the system is recognizing this person, but you are not able to judge the quality of the sentences.
-So the sentences, in fact, are pretty crappy, and they jump too quickly, and if you, if you did not understand me and you only had these two lines to follow, then you would get lost in the errors of ASR and MT.
-So this is this is good to show off, but it's bad for the user.
-So we have something else, we also show, uh, much longer context, uh, so, uh, the, the text as it grows.
-And here, uh, you have, uh, I don't know if this was probably given in English, and then it was translated into, uh, Czech, uh, and German, uh, and here you already see the difference between the stable output, the partial output and the, like, the incoming output.
-Uh, so, some of the sentences are fully processed by all the pipeline, all the components in the pipeline, and there is no way they could be updated any longer.
-And these sentences are shown in, uh, are shown in black, uh, and then, uh, there're sentences, which are, uh, gradually, uh, being updated, and here still the punctuation can, uh, can like make a difference, so that's why we're only showing this only in gray.
+Můžeme také vyzkoušet něco, co je ostatně jedním z cílů našeho projektu, a sice překlad mluvené řeči mezi koncovými body s jedním neutrálním systémem, který zachytí sekvenci v prvním jazyce a hned ji přeloží do druhého, cílového. Takže to je ještě jednou část Petrovy teze.
+Segmentátor, kterému poskytneme sled slov, odhadne interpunkci a podobu, používáme k tomu nástroj <UNKNOWN>'s, takže něčí nástroj.
+Bohužel už pak k této řečové jednotce nemá nástroj déle přístup a disponuje jen sekvencí slov, na základě níž odhaduje ohraničení věty.
+A jeden z mých kolegů, kteří se specializují na <UNKNOWN>, řekl, že si systém vede velmi dobře, pokud nemá informace o pauzách, intonaci, takže je velmi zajímavé, že i bez těchto informací zvládne dobře ohraničit větu.
+Stále to však má daleko k dokonalosti, je tam mnoho chyb.
+Pak je tu další nástroj, který by bral v potaz intonaci i prodlevy, ale nemáme čas ho propojit, takže si budeme hrát na to, že jsme vděční za každou pomoc.
+<UNKNOWN> tento segmentační nástroj trénoval na svých datech, zhruba čtyři miliony vět a zde je přesnost a schopnost vybavit si nejrůznější interpunkční znaménka, která sledujeme, zejména v případě tečky, která je stěžejní k ohraničení vět, pohybuje se od 70 do 80 procent, což je sice slušné, ale stále nedostačující pro využití v praxi
+Nuže dobrá.
+Takže zde je příklad chyby v segmentaci, tedy v přesnosti, která vede k matoucímu výstupu, kdy mluvčí řekl něco jako like „nepříliš dobře“, což je část jednoho delšího celku a segmentátor rozpoznávání řeči plus, vložil konec věty přímo doprostřed této fráze, což vyústilo v: „Tento přístup generalizuje nepříliš“, následované samostatnou větou: „Takže, abychom shrnuli celé pojednání“, jinými slovy se zde výrazně změnil sémantický aspekt, což je přesně případ toho, kdy by strojový překladač při překladu takhle špatně ohraničených vět zkolaboval.
+Sice by tyto věty vypadaly krásně, ale celé sdělení by se překroutilo.
+Chyby ve vybavování, které v obsahu dělají paseku, probereme na následujících slidech.
+Dobrá.
+Zde je další technikálie, a sice komunikace mezi systémem rozpoznávání řeči a překladem mluvené angličtiny.
+Jedná-li se o online rozpoznávání řeči, dostáváme sice text, ale jako proud slov, a ne jako ohraničené věty.
+Takže při prvním testování, které probíhalo hlavně v březnu, tedy ne u každého, ale jen u toho pro Nejvyšší kontrolní úřad jsme takový text dostávali a tohle je první text, druhý, třetí a čtvrtý a všechny jsme je podrobili strojovému překladu, takže první text zněl: „Měli byste poděkovat, že zde“, což je stále nedokončená věta.
+Strojový překladač se zde rozhodl první větu vynechat, protože sem příliš nepasuje, neboť je vycvičený převádět celé věty, takže nějakou půlku klidně vyhodí a ponechá jen: „Děkuji“.
+Zde je pak tento text rozšířen, systém rozpoznávání řeči jej doručil se stejnou předponou a jen přidal další slova, která mezitím zaznamenal.
+Tohle je možná ten nejlepší překlad, kterého strojový překlad mohl dosáhnout, a pak systém doručil takzvané potvrzení: „Nebudu tě více obtěžovat těmito třemi slovy“, „Měl bys poděkovat“, odteď už je nebudu zaznamenávat, ale jen zbytek, „Bylo zde mnoho převratů“.
+Takže zde je samostatné sdělení, „Měl bys poděkovat“, což je celistvá věta, a začátek té další, což jsme přeložili, jako kdyby se jednalo o jednu větu, a to je prostě špatně, další věta začíná v polovině a my ji přeložíme znovu jako celistvou větu, takže je vidět, že ohraničení vět je kvůli nám neprozkoumané, což všechno podkopává, všechny částečné věty povyšujeme na celistvé, ale to neodpovídá tomu, jak lidé mluví.
+Dobrá, takže když k sobě lépe dáte systém rozpoznávání řeči a strojový překlad a to se nám podařilo, což vám ukážu na následujících slidech, musíte pak ještě nějak odprezentovat výsledek, tudíž se pomalu blížíme do finále, a přesto ještě stále můžeme celou hitparádu pohřbít.
+Ssss.
+Pokud jsou titulky příliš malým písmem a byly by ještě menší, pak by pro vás neměly žádný význam.
+Tudíž si musíte pečlivě vybalancovat, kolik obsahu kam umístit, a i když jsou pak titulky čitelné pro první řadu, ty zadní někdy musejí spoléhat na svůj telefon a najednou mají jiný tvar, transkripce a překlad se objevují jinde, což znatelně ovlivňuje, kolik informací do nich můžeme vložit, a musíme se operativně rozhodnout, co vynechat a co ne.
+Například když text problikává tak rychle, že ho člověk nestíhá číst.
+Takže to je jeden z důvodů, proč u rozpoznávání řeči nevyužíváme celou neuronální síť, jelikož je navržena pracovat v okně, které se jednou za čas mění.
+Za jeden úsek se rozpozná osm sekund, přičemž se může měnit začátek, představte si můj projev před osmi sekundami a k tomu se rozhodovat, co bylo první slovo.
+Většinou se slova nemění, ale někdy ano, a pokud máte takový dlouhý text, který se mění tady a tady, na různých místech, v různých slovech, nemáte tušení, jak ho číst, takový text je nestálý.
+Takže pracujeme právě na tomto propojení.
+Chtěl jsem zdůraznit, že se tato prezentace musí testovat na podiu, a ne v simulaci, tedy velikost textu, viditelnost z různých částí místnosti, to vše může negativně ovlivnit prezentaci tak moc, až je nepoužitelná.
+Pokud jste si někdy objednali věc z e-shopu, která přišla a byla příliš malá, nebo naopak velká, pak jistě víte, co mám na mysli.
+Kdy na e-shopu máte obrázek toho, co kupujete, ale chybí míry, takže nevíte, jestli ten plyšový méďa bude malinký nebo obří... tentýž problém se týká i titulků.
+Zde je něco, co jste možná viděli i na svých obrazovkách.
+Tímhle chceme hlavně naznačit, do kterých všech jazyků jsme schopni překládat, jak vidíte, používáme titulky o dvou řádcích, momentálně pro deset jazyků, z nichž se však stane 43.
+Tím se dobře demonstruje to, jak mě systém sleduje a dokáže navodit falešný dobrý pocit, protože pokud mě dobře sledujete, a rozumíte tomu, co říkám, pak už nemůžete tak pozorně číst to, co je zobrazeno v titulcích, a povšimnete si jen správných klíčových slov, takže pokud budu hovořit o titulcích a vy uvidíte „titulky“, řeknete si, ano, systém toho člověka snímá dobře, ale už nemůžete posoudit kvalitu vět.
+Ve skutečnosti jsou věty celkem mizerné a přeskakují až moc rychle, takže pokud byste mi nerozuměli a museli se spoléhat jen na tyto dva řádky, pak byste se ztratili v chybách jak systému pro rozpoznávání řeči, tak strojového překladu.
+Takže hezké na pohled, ale pro uživatele nic moc.
+Pak tu je ještě něco, co vám ukážeme, a sice daleko obsáhlejší kontext, rozrůstající se text.
+Zde je, a teď si nejsem jistý, zřejmě původně anglický text, přeložený do češtiny a němčiny, a tady si už můžete povšimnout rozdílů v průběžném a konečném výstupu.
+Některé věty jsou všemi komponenty plně zpracovány a neexistuje možnost je dál vylepšit.
+Zobrazují se černě, a pak jsou tu věty, které jsou ještě v procesu úprav a můžou se ještě interpunkčně změnit, proto se zobrazují šedě.
 @ 0:48:18
-This was probably given in English.
+Zřejmě původně anglický text.
 [0:47:37]
-And then it was translated into Czech and German. 
-And here you already see the difference between the stable output, the partial output and the like the incoming output.
-So, some of these sentences are fully processed by all the pipeline, all the components in the pipeline.
-And there is no way they could be updated any longer.
-And these sentences are shown in are shown in black.
+Přeložený do češtiny a němčiny. 
+A tady si už můžete povšimnout rozdílů v průběžném a konečném výstupu.
+Některé věty jsou všemi komponenty plně zpracovány.
+A neexistuje možnost je dál vylepšit.
+Zobrazují se černě.
 And then there are sentences which are gradually being updated.
-And here still the punctuation can can like make a difference.
-So that is why we are showing this only in grey.
+A pak jsou tu věty, které jsou ještě v procesu úprav a můžou se ještě interpunkčně změnit.
+Proto se zobrazují šedě.
 And then there is the last sentence, which is still getting more and more words.
 And as the segmenter finishes processing of some of this then the full some full stop here will appear.
 And it will be out of the uh, the processing area of of the segmenter anymore, and it will become the black and fully stable output.
