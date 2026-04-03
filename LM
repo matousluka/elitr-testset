@@ -385,33 +385,33 @@ Kdybych překládal já, asi bych přeložil takhle.
 Jen jsem chtěl upozornit na „jsou dva“ přeložené jako „rozdrobit se“.
 Což je úplně mimo.
 Dobrá.
-Takže co tu máme, jaké jsou naše plány pro překladatelskou misi, data, data, data a pak možná pár modelů.
+Takže co tu máme, jaké jsou naše plány pro překlad, data, data, data a pak možná pár modelů.
 Určitě se pokusíme získat více paralelních dat.
 Pracuje na tom Univerzita v Edingburgu.
 My se zase pokusíme získat více výstupních dat z jednoho jazyka a pak zpětně překládat pro větší přizpůsobivost.
 Takže takový kontrolní mechanismus.
 35:12
 @ 0:34:50
-Takže co tu máme, jaké jsou naše plány pro překladatelskou misi, data, data, data a pak možná pár modelů.
+Takže co tu máme, jaké jsou naše plány pro překlad, data, data, data a pak možná pár modelů.
 Určitě se pokusíme získat více paralelních dat, pracuje na tom Univerzita v Edingburgu.
 My se zase pokusíme získat více výstupních dat z jednoho jazyka a pak zpětně překládat pro větší přizpůsobivost, takže takový kontrolní mechanismus, takže bychom se rádi zaměřili na všechny tyto materiály.
-Uh, they are hardly parallel, some of them are, but not too many, and especially not for, uh, those, uh, like 19, uh, non-EU languages that we are also, uh, oh, aiming at.
-So hopefully our, uh, baseline systems in the back translation will make some sensible output from that, and hopefully we'll be able to improve the translation quality.
-We'll create indomain test sets, and we will regularly evaluate on them.
-We'll also try to, uh, uh, get, uh, in touch, uh, with <UNKNOWN>, that's a collection of, uh, user supplied, uh, parallel data, and, uh, they can, given our test sets, they can extract the most similar sentences, so, uh, some like filtering off off larger, uh, pool of, uh, parallel data.
-We'll also try to create gazetteers, so lists of relevant named entities like participants, or or the presidents of the Supreme Audit Offices.
-Uh, this is, uh, having just the list of names, uh, is not ideal for, uh, for machine translation, but it's definitely better than nothing, so we'll, we'll try this as well.
-I'm also considering, and this is something that maybe someone of you could try, I'm considering to to train machine translation on distorted source, uh, because I would prefer the machine translation system to say something in the domain and sensible, rather than to, uh, to like, uh, uh, try to, uh, perfectly translate the wrong ASR output, uh, so for me, tentatively, I'm saying that, uh, it seems to be better to say something similar or related, uh, rather than, uh, uh, like do perfect translation of the wrong input.
-It, we'll see whether this, uh, is a good assumption or not, if if the system starts making up the content, then obviously, the users will not be happy as well, but, uh, right now, uch, uch, uch, our system is too easy to, to, like, uh, to, to, to, to, um, that, to, it is too easy to to notice that our system is doing something wrong, and, uh, we want to hide it a, uh, uh, bit under the carpet, so let's see if this will be a good strategy or not and let's see if we manage to train such a, uh, model.
-And I'm afraid that we will never get, during this few months, uh, to the interesting things like the speaker's gender.
-Uh, obviously, uh, the machine translation system has no information about the gender of the speech.
-Uh, the parallel data, uh, is totally like, uh, non-labelled, uoouh, it doesn't know about that fact either, and, uh, uh, English doesn't, uh, mark most sentences for the gender of the speaker, uh, so it's very likely that our system will be just making up and switching the gender of the, uh, of the speaker, uh, in the first person sentences, uh, and that will be very confusing for the audience.
-So, uh, I'm afraid that we will not get to this, unless there is someone who would like to help.
-Okay.
-Then the integration of the ASR and MT.
-Uh, I've already said, uh, ASR emits strings of lowercase words, uh, machine translation expects individual correct sentences, so there're a number of options that we can try to, uh, uh, bridge the gap.
-So we can try to insert punctuation into the ASR output, uh, which we call the segmenter, uh, or, uh, we can change the ASR, uh, to predict directly correct punctuation, so the speech recognition would run not into, uh, just sequence of words, but sequence of words with punctuation and capitalization.
-And a student of mine is is working on this.
+Které jsou jen stěží paralelní, některé z nich jsou, ale není jich moc, hlavně pro těch zhruba 19 neunijních jazyků, na které rovněž cílíme.
+Takže snad nám překladový systém vyhodí nějaký rozumný výstup, jehož kvalitu, doufejme, bude shopni vylepšit.
+Vytvoříme pro ně vlastní testové sady a průběžně je vyhodnocovat.
+Rovněž se budeme chtít propojit s <UNKNOWN>, což je kolekce uživatelsky podporovaných paralelních dat, a ty nám mohou v testových sadách vyfiltrovat podobné věty, větší množství paralelních dat.
+Také budeme chtít vytvořit seznam relevantních jmen, ať už účastníků, nebo prezidenta Nejvyššího kontrolního úřadu.
+I pouhý seznam jmen je pro stojový překlad lepší než nic, takže se pokusímei o to.
+Také uvažuji nad tím, a to si klidně někdo může sám zkusit, že bychom strojový překlad trénovali i na významově překrouceném materiálu, neboť mám raději, když mi stroj vyplivne něco kloudného, než je překlad špatného rozpoznání řeči. Je pro mě z principu lepší mít něco stejného či odvozeného než vynikající překlad z chybných dat.
+Tak uvidíme, jestli se ve svém odhadu nemýlím, pokud si systém začne vymýšlet, pak samozřejmě nebudou jásat ani uživatelé, ale v tuto chvíli je náš systém příliš jednoduchý na to, aby rozpoznal, že dělá něco špatně, což bychom rádi zametli pod koberec, takže se uvidí, jestli je tohle dobrá strategie nebo ne a jestli dokážeme takový model vytvořit.
+A obávám se, že se za těch pár měsíců nedostaneme k takovým zajímavým věcem, jako je pohlaví řečníka.
+Systém strojového překladu samozřejmě takovou informaci k dispozici nemá.
+A ani paralelní data, angličtina moc pohlaví řečníka neřeší, tudíž si náš systém pravděpodobně začne vymýšlet a u mluvčího pohlaví střídat, hlavně u vět z pohledu první osoby to bude pro diváky velmi matoucí.
+Takže se k tomu, obávám se, nedostaneme, ledaže by nám někdo pomohl.
+Dobrá.
+Pak je tu integrace rozpoznávání řeči a strojového překladu.
+Jak jsem již řekl, rozpoznávání řeči se orientuje na jednotlivá slova, zatímco strojový překlad očekává uzavřené, gramaticky správné větné celky, takže je několik možností, jak tuto propast překlenout.
+Můžeme se pokusit výstup z rozpoznávání řeči opatřit interpunkcí, což nazýváme segmentací, můžeme naprogramovat rozpoznávání řeči, aby správnou interpunkci samo odhadovalo, takže by strojový překladač nepracoval pouze se sekvencí slov, ale se sekvencí slov o velkých písmenech a interpunkcí.
+Na čemž ostatně pracuje jeden z mých studentů.
 And we can also try something which is one of the research goals of our project, uh, that's fully end to end spoken language translation, uh, with one neural system that, uh, gets the sound in one language and produces, uh, the translation in the, uh, in the target language right away, so that's again part of, uh, Peter's, uh, thesis.
 So the segmenter, given a stream of words, guess punctuation, casing, we use, uh, uh, <UNKNOWN>'s tool, so, someone's tool.
 Unfortunately, the speech information is no longer accessible to this tool, so it has just the sequence of words, and based on the sequence of words, it is guessing sentence boundaries.
