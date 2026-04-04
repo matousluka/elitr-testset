@@ -743,104 +743,104 @@ Což je něco, na čem náš Ústav v minulosti rovněž pracoval.
 Zde je úkolem vzít nedokonalý mluvený projev a přeměnit jej ve zdánlivě napsaný.
 To znamená mít všechny věty gramaticky a věcně správně.
 Ale tento nástroj v našem systému zahrnutý není.
-So quite on the contrary, we are rather moving towards machine translation systems, which will be robust to translating even these a partial sentences.
-So, I have not mentioned in the slides, but another of students of mine, Dominik Macháček, is working on on machine translation, which runs not on sentences, but on a window of words.
-So we would like to get rid of the segmenter altogether.
-And we would, hopefully, if if we're provided with good training data that has this property, then the translation system would be able to translate disfluent sentences into disfluent sentences usable in the target language.
-More questions?
-OK.
-I have the question about the issue of where to place your microphone, because several times, I saw some speakers holding their microphone under their chin, like this.
-Have you ever seen it?
-It's not frequent at all that they're claiming that it's it's...
-You can...
-It is completely understandable.
-And you prevent flowing the air.
-We have not tried.
-So next next time you see me giving a talk, I'll be surely holding a microphone under my chin to evaluate it properly.
-I do not know.
-I realize that there is no loud speakers here in the room.
-But when you put the microphone under your chin your voice has changed here in like in the in the loud in the in the wild.
-Yeah.
-So I do not know, maybe maybe the recording has not has not seen any change, but we have.
-OK.
-I have two small questions.
-One question concerns or, it is a remark.
-That I think that if intonation is paid due attention to, then it might help for the segmentation a lot.
-Of course, in the fluent speech, people don't behave according to the rules.
-That still.
-But I have one question for your slide number 43.
-I just wondered.
-Yeah.
-There are between...
-In the 34 part you have capitals but you don't have punctuation.
-I think this is bugs.
-Ok.
-So, so we do not know.
-I do not know...
-We can actually give it a try.
-If I launch this.
-But where where is this that?
-So.
-So here.
-tiny
-So I will I will...
-I will stop the live subtitles, because it is picking...
-Or I'll leave them on.
-I am pretty happy with your answer.
-So.
-So I'm I'm curious myself because here is the where is that....
-Because I have one more general question.
-Yeah.
-Yeah.
-So please, feel free to ask.
-I will just go to the paragraph view in the meantime.
-elitr
-elitr
-So let us switch off the Hindi and Hungarian.
-And and X1 and X0.
-So this is my English recognized, and it is being translated into German, and into Czech.
-Yeah.
-And and the more general question, which may be you have heard seven times.
-How much can you learn or add to your considerations if you ask the translators...
-Interpreters...
-Interpreters...
-Interpreters who have the simultaneous translation...
-From their strategies or something like that...
-Is there something in the in the system, which would reflect this experience?
-Not yet.
-Not at all.
-We are in touch with them, because you like it, it helps us.
-So we, we...
-Thanks to them we can get hold of the data, but their interpretation strategies are much more much more long-range, so, to say.
-So, they are happy to listen to a couple of sentences, even for the simultaneous translation.
-So simultaneous can still mean 20 seconds after that.
-And they will first get the whole idea.
-And they, they will speak it from scratch.
-And this is very distant from what we are doing, but we are aiming to get into the same realm, so to say.
-So we have now our very first data sets where we have the source speech in English, which is being interpreted live into Czech by some of these students.
-And so we are also transcribing the English.
-And we are translating in the text form what was said in English.
-And the evaluation tool that I mentioned that will consider the quality in terms of BLEU score or a similar score for machine translation, the lag and the flicker, is meant -- it is not yet tested -- but it is meant to be applicable also to human interpreters.
-So ideally, we would see that the human interpreters are much better in precision, or the the quality of the output, but they will be much slower.
-They will have much longer lags.
-And they will obviously have no flickers or very likely they will...
-Well, it will be difficult to spot the flickers, because the the the way will be collecting the data.
-So.
-But we would really like to have automated tool that evaluates both SLT systems and interpreters in in the same three scales. 
-And then we see what are the complementary benefits of of these like groups of of processors.
-Their strategies so far are are not of any use to us.
-And also their evaluation strategies are very distant from what we are like talking about.
-So that that...
-Yeah.
-We have seen a checklist of when they are being graded, the interpreters.
-And and..
-Yeah.
-Some of these items are are totally irrelevant to our technology.
-Ok.
-Thank you.
-So I am afraid we have to stop at this point.
-So thank you again for your talk
-And I just would like to announce that we don't have a session next week.
-And you will learn about the title, and the speaker of the next following week in your emails.
-So thank you very much.
-Thank you.
+Vlastně míříme k úplnému opaku: ke strojovému překladu, který by masivně překládal i tyto neúplné věty.
+Tohle jsem v prezentaci neměl, ale další z mých studentů, Dominik Macháček, pracuje na strojovém překladači, který nepracuje s větami, nýbrž s mozaikou slov.
+Rádi bychom se tedy segmentátoru úplně zbavili.
+A při dostatku vhodných trénovacích dat bychom rádi vytvořili systém, který by převáděl nedokonalou řeč do nedokonalých vět v cílovém jazyce.
+Další otázky?
+Prosím.
+Měl bych otázku k umístění mikrofonu, protože jsem se u několikrát setkal s tím, jak řečník drží mikrofon pod bradou.
+Setkali jste se s tím?
+Není to tak časté, všichní tvrdí...
+Můžete...
+Je to naprosto pochopitelné.
+Zabráníte tím funění.
+Nezkoušeli jsme to.
+Takže příště mě uvidíte držet mikrofon pod bradou, abychom vyhodnotili úplně všechno.
+Nevím.
+Došlo mi, že zde v místnosti není žádný reproduktor.
+Ale když si dáte mikrofon pod bradu, váš hlas se změní a je víc slyšet.
+Vskutku.
+Tak nevím, možná se to do nahrávky nepropsalo, ale my jsme to slyšeli.
+Prosím.
+Mám dvě otázečky.
+První bych se zeptal, nebo spíše něco podotkl.
+Řekl bych, že při zřetelné intonaci je segmentace přesnější.
+Samozřejmě, u plynulého projevu se člověk pravidly moc neřídí.
+Takže tak.
+Ale měl bych otázku ke slidu 43.
+Říkal jsem si.
+Ano?
+Mezi...
+V části 34 máte velká písmena, ale ne interpunkci.
+Myslím, že to je bug.
+Dobře.
+Takže nevíme?
+Netuším...
+Můžeme to zkusit.
+Pokud to spustím.
+Kde že to je?
+O.
+Tady.
+Titěrné.
+Takže...
+Vypnu titulky v reálném čase, protože...
+Anebo je nechám zaplé.
+Vaše odpověď mě těší.
+Takže.
+Sám jsem zvědavý, protože tu je....
+Protože mám ještě jeden obecný dotaz.
+Povídejte.
+Ano.
+Jen se ptejte.
+Jen si mezitím přepnu režim.
+ELITR
+ELITR
+Dáme tam teď hindštinu a maďarštinu.
+X1 a X0.
+Takže tohle je moje angličtina a ta se překládá do němčiny a češtiny.
+Dobrá.
+Obecný dotaz, který jste mohl slyšet už tak sedmkrát.
+Nakolik můžete vzít v potaz, když se zeptáte tlumočníků...
+Tlumočníků...
+Tlumočníků...
+Kteří tlumočí simultánně...
+Na jejich strategie nebo tak něco...
+Může systém tyto zkušenosti nějak reflektovat?
+Zatím ne.
+Vůbec ne.
+Jsme s nimi v kontaktu, protože nám pomáhají.
+Takže se...
+Díky nim sbíráme data, ale jejich strategie jsou, řekněme, za hranicemi možností.
+Takže si rádi poslechnou pár vět, i kdyby simultánně?
+No, simultánně ale může znamenat i 20 sekund poté.
+Nejdříve si musí udělat představu.
+A pak tlumočit s pomocí notace.
+Což je dost vzdálené tomu, co my děláme, ale pohybujeme se ve stejném prostředí, to ano.
+Naše úplně první datová sada, kterou máme, jsou projevy v angličtině, které někteří tito studenti tlumočí do češtiny.
+Máme i transkripci.
+A překládáme to, co bylo řečeno v angličtině.
+A nástroj pro vyhodnocení, který jsem zmiňoval, stanovuje kvalitu strojového překladu na základě stupnice BLEU nebo podobné, prodleva nebo problikávání, se však dá uplatnit i na lidské tlumočníky, ale zatím to není otestované.
+Ideálně bychom měli dojít k závěru, že lidští tlumočníci jsou sice ve sdělení preciznější a kvalitnější, ale trvá jim to déle.
+Je u nich mnohem delší prodleva.
+A problikávat zřejmě nebudou...
+Respektive to bude těžké zjistit kvůli metodě sběru dat.
+Takže.
+Bychom rádi měli automatizovaný nástroj, který by hodnotil systém i člověka ve stejných třech oblastech. 
+A pak bychom viděli, jaké dodatečné výhody ještě existují.
+Jejich strategie však pro nás zatím nemají žádný význam.
+A jejich hodnotící stupnice jsou úplně někde jinde, než jsme my.
+Takže...
+Samozřejmě že.
+Jsme viděli kritéria, podle kterých se hodnotí tlumočníci.
+A...
+Ano.
+Některá z nich jsou pro naši technologii naprosto irelevantní.
+Dobrá.
+Děkuji.
+Obávám se, že budeme muset končit.
+Takže ještě jednou moc děkujeme za tvou prezentaci
+Jen bych ráda upozornila, že příští týden seminář odpadá.
+V e-mailu se dozvíte, o čem a s kým bude seminář přespříští týden.
+Takže ještě jednou moc děkuji.
+Děkuji.
