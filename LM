@@ -610,139 +610,139 @@ Takže je musíme nějak donutit a vytvořit hodnotící sadu základních jedno
 U všech musí být segmentace stejná.
 [1:00:07]
 Takže zde je pár strategií.59:49
-So we have to somehow force align these.
-So that the basic set of units that we are evaluating over is common to all systems, regardless of what the English ASR does.
-Uh.
-Everybody has to reach the same reference segmentation.
-So there is some strategies.
-I'm not going into the into the details, any more.
-Essentially, we have either the option to work with these sentences, like consider more sentences at the same time, or we can totally forget sentences, and we can evaluate by evaluating 30 seconds chunks.
-So did the the MT, the SLT pipeline, the SLT pipeline produce the right words within these 30 seconds?
-And if it did then, yes, if not then not.
-So this is this is like a way to go around the problems of sentences not being uttered in in speech at all.
-Yeah.
-So the surge, or the mobilization, as I as I say it.
-The battle towards a usable system is still not lost.
-So we are now building of an army of paid volunteers.
-And if you have any colleagues or students who can help us between now and May or June, we are totally happy to take them on board.
-We are meeting at least once a week for just 30 minutes and discussing who is working on what.
-And we have funds for this.
-So this is like, ehm, a paid work
-And you can do many smallish tasks.
-For example, if you are looking at some of the MT outputs, there could have been bad characters, because no one has yet flagged checked where they come from in the pipeline.
-Then there is larger things that we need to develop.
-We would like to have a a dashboard, which we will give a configuration like a life system running, which grows logs, log files and this dashboard should allow us to immediately see where is a problem.
-So for example, if we are recognizing the English booth with the French ASR, then there will be many French words coming from the systems, but they will be totally wrong.
-That is the the most laughable output I have seen so far.
-Like swapping the languages for the ASR because the the systems will struggle.
-It will be like words similar with pronunciation, but in the wrong language, and the sentences won't make any sense whatsoever.
-So this can easily happen.
-If you are following six inputs and translating into 43 languages, you need a concise view to to to know what your systems are doing.
-So that would be a dashboard.
-Then a lot of work on the domain and speaker adaptation.
-Just just getting in touch with all the interpreters those who will be in the booth and contacting them, asking them to come here record an hour each.
-And then using this data to adapt the system.
-Again.
-A lot of a lot of little work.
-Code switching is something which I have not discussed in my talk at all.
-But I'm realizing how frequent it is, not only in linguistic lectures, where we have examples in foreign languages
-But also native speakers of other languages than English frequently bring in English phrases, and the ASR systems are totally not ready for that.
-So then the, it is very similar to to the named expression or named entities.
-It is simply unknown words that get recognized into something very, very bad.
-And then when this gets translated, it is very very laughable.
-There is also another activity, which would really like to start call in leather climbing.
-So it is when you have fixed test set, and you are working on improvements of your model, er, or the pipeline.
-So you're making many small changes.
-And you are always evaluating on the test set.
-So you are climbing the leather of performance.
-So this is this is what we have to run.
-I'm hoping for like two bigger model retrainings until until May and many architectural changes, many like smaller fixes that can improve the score quite a bit.
-And.
-Yep.
-I've already talked about this this dashboard.
-But this is still something different.
-The dashborad is like technical, uh, set up.
-You want to know that the sound volume from all the six inputs is the right.
-With this multi-source monitor, you assume that the, technically, the architecture is all set up well, but still, you need to decide which of the ASR in the combination with the speaker works best, and which of these sources delivers the best translation quality into the many target languages.
-So this is like a technical check that everything is running.
-And this is selection of the best path through the, for the best output quality.
-Yeah.
-To summarize.
-ELITR subtitling, er, a is a big challenge for the project
-Even if you connect to superhuman components, they can still deliver crap together.
-So we are now working on making this usable.
-Technically, the complex pipeline now works.
-It has been working...
-How many restarts did you have to, er, do, Sangeet?
-Multiple?
-Yeah.
-Okay.
-So it is not seamless.
-But with one operator, it can survive 60 minutes of of speech, and...
-But unfortunately, even with this whole system working, the benefit for the end user is still limited or nonexistent.
-So.
-If you did not follow my English speech, if you only had a chance to read the Czech translation, I'm curious how much you would get.
-So this is one of the...
-We are...
-We have still a few months to go.
-So I'm I'm very lucky that that we have these months to to fix the pipeline.
-And some of the problems that we are running into are not going to be solved in the next two, three, five years.
-But some of them can be fixed.
-So we will do our best to to make the the the output actually usable.
-And yeah.
-Please.
-Please join us.
-Ah, because ah, yeah.
-With.
-That's it.
-So we have a technology, which technically works but it is totally unusable.
-And and I'm curious, how how far we get in in these months.
-So we are running this this army or this this mobilization.
-So we seek for your help and just talk to any of us.
-So maybe those of you who are already on the surge team, just raise your hands so that people see.
-One, two, three.
-Ah.
-Yeah.
+Takže je musíme nějak donutit.
+A vytvořit hodnotící sadu základních jednotek, která je pro všechny systémy stejná, nehledě na to, co se děje u angličtiny.
+Ano.
+U všech musí být segmentace stejná.
+Takže zde je pár strategií.
+Nebudu už zabředávat do detailů.
+V zásadě s těmito větami buď budeme pracovat a brát jich v potaz víc najednou, anebo se na ně úplně vykašlat a vyhodnocovat třicetisekundové sekvence.
+Takže jako u strojového překladu, ktreý během 30 sekund vyprodukoval správná slova?
+Pokud vyprodukoval, tak ano, pokud ne, tak ne.
+Takže to je jeden ze způsobů, jak se vyvarovat chybějících vět.
+Tak.
+Takové vzedmutí, mobilizace, jak tomu říkám já.
+Bitva o použitelnost ještě není prohraná.
+Jinými slovy teď budujeme armádu placených dobrovolníků.
+A vy, pokud máte kolegy či studenty, kteří by nám pomohli v přípravách na kongres, rádi je vezmeme na palubu.
+Alespoň jednou týdně se na půl hodiny potkáme a rozdělíme si úkoly.
+Je na to dotace.
+Takže se jedná o placenou práci.
+Můžete dělat i jednoduché úkoly.
+Například můžete kontrolovat výstupy, ve kterých se občas vyskytnou chybné znaky, protože ještě nikdo zatím nezjistil, kde se při procesu berou.
+Pak jsou tu větší věci, které je třeba vyvinout.
+Rádi bychom měli ovládací panel, který by vytvářel logy, z nichž by hned bylo patrné, kde je problém.
+Pokud bychom například snímali anglickou kabinu systémem rozpoznávání řeči pro francouzštinu, pak si ze systému padala francouzská slova, která by ale byla úplně špatně.
+To byl ostatně ten nejvtipnější výstup, který jsem kdy viděl.
+Prohodit jazyky systému, který tím pádem začne mít problémy.
+Kdy bude ukazovat slova, která zní podobně, ale ve špatném jazyce, takže věta nebude dávat pražádný smysl.
+Může se to stát raz dva.
+Pokud máte 6 vstupů, ze kterých překládáte do 43 jazyků, musíte mít přehled o tom, co systém dělá.
+K tomu by sloužil ten ovládací panel.
+Pak dá hodně práce přizpůsobit se tlumočníkům.
+Které bychom rádi kontaktovali a požádali, aby si na hodinu sedli do kabiny, zatímco my bychom je nahrávali.
+A na těchto datech pak trénovali systémy.
+Opět.
+Je to dost mravenčí práce.
+Střídání kódů je něco, o čem jsem za celou dobu ani jednou nemluvil.
+Začínám si však uvědomovat, jak časté je, a nejen u ligvistických přednášek, kde jsou příklady z cizích jazyků.
+I mluvčí s odlišným mateřským jazykem než je angličtina používají v angličtině ustálené fráze, na které by systém nemusel být připravený.
+Je to velmi podobné vlastním jménům.
+V podstatě neznámá spojení, které systém pochopí úplně špatně.
+A když je přeloží, zní k smíchu.
+Pak je tu další věc, která by nás posunula o dost výš.
+A to když máte testovou sadu a vylepšujete svůj model, respektive procesy.
+A děláte opravdu drobné úpravy.
+Přičemž pokaždé tuto sadu vyhodnocujete.
+A posouváte se výš.
+To musíme zavést.
+Doufám, že se nám před kongresem podaří systém pořádně vytrénovat a vylepšit mu skóre, i kdyby jen skromnými úpravami.
+A.
+Ano.
+O ovládacím panelu jsem už hovořil.
+Ale je tu ještě něco jiného.
+Ovládací panel je technického rázu.
+Je ve vašem zájmu mít jistotu, že každý ze šesti vstupů má stejnou hlasitost.
+S tímto panelem předpokládáte, že je vše sestaveno technicky správně, a přesto se musíte rozhodnout, který systém a řečník k sobě nejlépe ladí a dosáhnout co nejkvalitnějšího překladu do co nejvíce jazyků.
+Takže taková technická kontrola, jestli vše běží, jak má.
+Vybrat tu nejlepší cestu ke kvalitnímu výstupu.
+Dobrá.
+Abychom si to shrnuli.
+Pro ELITR je titulkování celkem výzva.
+I když zapojíte systémy lepší než je člověk, můžete nadělat pěknou paseku.
+Takže pracujeme na tom, aby se to nestalo.
+Technicky je celý proces plně funkční.
+A také fungoval...
+Kolikrát jsi to musel restartovat, Sangeete?
+Několikrát?
+Nuže.
+Donrá.
+Takže to není bezchybné.
+Ale i v jednom dokážeme přežít hodinový projev...
+I když z toho koncový uživatel bohužel zatím příliš, repsektive vůbec netěží.
+Takže.
+Pokud nerozumíte anglicky a museli se spoléhat pouze na překlad do češtiny, zajímalo by mě, kolik jste toho pobrali.
+Takže to je jeden z...
+Jsme...
+Máme ještě pár měsíců.
+A jsem za ně moc rád, protože ještě máme čas na systému pořádně zamakat.
+Některé z problémů, na které narážíme, nepůjde vyřešit ani za dva tři roky, ani za pět let.
+Ale pár jich opraveno být může.
+A my uděláme všechno proto, aby byl systém použitelný.
+A ano.
+Prosím.
+Přidejte se k nám.
+Protože.
+Se můžeme.
+Je to tak.
+Máme technologii, která sice funguje, ale je dost ošemetná.
+Jsem zvědavý, kam se za těch pár měsíců posuneme.
+A hledáme armádu, mobilizujeme.
+Hledáme pomoc a budeme rádi, když za námi přijdete.
+Možná by bylo dobré, kdyby teď všichni, kteří nám už pomáhají, zvedli ruku, ať lidi vidí.
+Jeden, dva, tři.
+O.
+Ano.
 Atul.
-So at least four four people in the room already.
-And if you have more...
-Or if you have students who would like to get in touch with this.
-This is a nice -- it is not summer internship -- it is like spring, spring internship.
-Please, please, let them know.
-And you can read all the details about the project in the blog.
-And if you want the the real truth, then talk to us directly.
-Yeah, OK.
-Thank you.
-Thank you very much for...
-And I think we still have some minutes to ask questions or add some details.
-Yeah.
-Hanka.
-Well, you spoke about the the the problem from ASR.
-If there is a mistake in understanding of the of the word then it brings the problem further to the machine translation.
-And you also spoke about the the module, that puts the punctuation into into the steam of words.
-Did you consider some something, like hm some sort of grammar checker, or some language model that would check whether the supposed sentences are really sentences or dramatically good enough to be sent to machine translation.
-So yes, and no.
-The whole punctuation insertion, the segmenter is a language model as such.
-So that is that is just like n-gram-based.
-But it is not n-gram.
-It is it is longer sequences.
-It is a neural-network-based language model.
-And it is trained on concatenated sentences.
-But I think these sentences are concatenated from already a shuffled training set.
-So it has...
-Like....
-The sentences came became adjacent just by randomness, and not by a proper context.
-So there is a certain limitation.
-So that is that is the yes part of of that.
-So it totally relies on some language model in the statistical sense more.
-And some grammaticality of the sentences?
-No, no.
-We are not considering that at all, because, well, we also do not assume that people would utter grammatically correct sentences.
-So that is the um the the, problem, or the task that you may be referring to would be called speech reconstruction.
-And this is something that that our department has been working on in the past as well.
-There the goal is to take the partly disfluency speech of of myself and convert it into a written-like speech.
-Like proper all, only all correct, grammatically proper sentences.
-But we are not working with with this component at all in in our system.
+V této místnosti už nejméně čtyři lidé.
+A pokud někoho znáte...
+Nebo máte studenty, kteří by se rádi zapojili.
+Prosím, bylo by milé -- a není to v létě -- ale na jaře.
+Kdybyste jim dali vědět.
+Všechno se dočtete na blogu.
+A chcete-li vědět, jak je to doopravdy, přijďte za námi.
+Nuže dobrá.
+Děkuju.
+Děkuju moc za...
+A já myslím, že máme ještě pár minut na dotazy nebo připomínky.
+Ano.
+Hanko.
+Mluvil jste o problému u rozpoznávání řeči.
+Pokud špatně rozklíčuje slovo, tato chyba se dostane i do strojového překladu.
+Rovněž jste hovořil o modelu, který ohraničuje věty.
+Uvažovali jste nad jazykovým modelem, který by kontroloval, jestli je věta gramaticky správně a může se nechat strojově přeložit?
+Ano i ne.
+Celý segmentátor je jazykový model sám o sobě.
+Podobně jako n-gramové modely.
+Ale tohle n-gramový model není.
+Tady jde o delší sekvence.
+Takže staví na neuronových sítích.
+A cvičí se na řetězcích vět.
+Které se generují už z promíchané sady.
+Takže má...
+No....
+Věty se řetězí náhodně, a ne podle bližšího kontextu.
+Což je dost limitující.
+Takže ano, částečně ano.
+Takže se spoléhá na jazykový model spíše ze statistického hlediska.
+A nějaká gramatičnost vět?
+Ne, ne.
+Tu vůbec nebereme v potaz, protože si nemyslíme, že člověk mluví jen gramaticky správně.
+To, o čem zřejmě hovoříte, by byla rekonstrukce řeči.
+Což je něco, na čem náš Ústav v minulosti rovněž pracoval.
+Zde je úkolem vzít nedokonalý mluvený projev a přeměnit jej ve zdánlivě napsaný.
+To znamená mít všechny věty gramaticky a věcně správně.
+Ale tento nástroj v našem systému zahrnutý není.
 So quite on the contrary, we are rather moving towards machine translation systems, which will be robust to translating even these a partial sentences.
 So, I have not mentioned in the slides, but another of students of mine, Dominik Macháček, is working on on machine translation, which runs not on sentences, but on a window of words.
 So we would like to get rid of the segmenter altogether.
