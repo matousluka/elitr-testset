@@ -418,11 +418,11 @@ Bohužel už pak k této řečové jednotce nemá nástroj déle přístup a dis
 A jeden z mých kolegů, kteří se specializují na <UNKNOWN>, řekl, že si systém vede velmi dobře, pokud nemá informace o pauzách, intonaci, takže je velmi zajímavé, že i bez těchto informací zvládne dobře ohraničit větu.
 Stále to však má daleko k dokonalosti, je tam mnoho chyb.
 Pak je tu další nástroj, který by bral v potaz intonaci i prodlevy, ale nemáme čas ho propojit, takže si budeme hrát na to, že jsme vděční za každou pomoc.
-<UNKNOWN> tento segmentační nástroj trénoval na svých datech, zhruba čtyři miliony vět a zde je přesnost a schopnost vybavit si nejrůznější interpunkční znaménka, která sledujeme, zejména v případě tečky, která je stěžejní k ohraničení vět, pohybuje se od 70 do 80 procent, což je sice slušné, ale stále nedostačující pro využití v praxi
+<UNKNOWN> tento segmentační nástroj trénoval na svých datech, zhruba čtyři miliony vět a zde je přesnost a schopnost odhadovat interpunkční znaménka, která sledujeme, zejména tečku, která je stěžejní k ohraničení vět, pohybuje se od 70 do 80 procent, což je sice slušné, ale stále nedostačující pro využití v praxi
 Nuže dobrá.
 Takže zde je příklad chyby v segmentaci, tedy v přesnosti, která vede k matoucímu výstupu, kdy mluvčí řekl něco jako like „nepříliš dobře“, což je část jednoho delšího celku a segmentátor rozpoznávání řeči plus, vložil konec věty přímo doprostřed této fráze, což vyústilo v: „Tento přístup generalizuje nepříliš“, následované samostatnou větou: „Takže, abychom shrnuli celé pojednání“, jinými slovy se zde výrazně změnil sémantický aspekt, což je přesně případ toho, kdy by strojový překladač při překladu takhle špatně ohraničených vět zkolaboval.
 Sice by tyto věty vypadaly krásně, ale celé sdělení by se překroutilo.
-Chyby ve vybavování, které v obsahu dělají paseku, probereme na následujících slidech.
+Chyby v odhadování, které v obsahu dělají paseku, probereme na následujících slidech.
 Dobrá.
 Zde je další technikálie, a sice komunikace mezi systémem rozpoznávání řeči a překladem mluvené angličtiny.
 Jedná-li se o online rozpoznávání řeči, dostáváme sice text, ale jako proud slov, a ne jako ohraničené věty.
@@ -463,153 +463,153 @@ Zobrazují se černě.
 And then there are sentences which are gradually being updated.
 A pak jsou tu věty, které jsou ještě v procesu úprav a můžou se ještě interpunkčně změnit.
 Proto se zobrazují šedě.
-And then there is the last sentence, which is still getting more and more words.
-And as the segmenter finishes processing of some of this then the full some full stop here will appear.
-And it will be out of the uh, the processing area of of the segmenter anymore, and it will become the black and fully stable output.
-Here you see why the full stop recall is important.
-If the full stop are too scarce they are too infrequent in the output, then too much of text will remain in this gray fase and too much of text will like be still undecided and flickering.
-People will wait wait too long for the stable output.
-And you also that it is also like matter of taste, whether people would like to follow the more the more unstable more recent output, or whether they would like to follow only the stable one, but be several seconds behind the speaker.
-So that that differs.
-So this is something that we have to update.
-And ideally, it would be the users choice.
-Would you like to have the the the shortest possible delay at the risk of the reading something which will be still like fixed, or would you like to wait little longer until our output is stable.
-So that is something that the the ideally the the user would choose.
-Yeah, so if people are provided with this longer context, then they can better recover from errors along the pipeline.
-So it is almost possible to follow the content of a talk which is not known to you if it is not too far from the domain of the training of the machine translation system.
-Ah, okay, yeah.
-So here is a little summary of what has to be done.
-If you are presenting text only in the two lines of subtitling.
-So you have some ASRs.
-So this is some English stream of words.
-Pixels on your screen.
-At any given moment.
-It is also very flexible architecture of.
-This is an entire book.
-So you see that there is no sentence boundaries.
-And the segmenter needs to predict some sentence boundaries.
-So it predicted a full stop here and a full stop here.
-And then some ASR update comes.
-And it also, based on this update, the segmenter has another update.
-So it predicts one more full stop here.
-So this is like sequences of updates coming.
-And some of these sentences are already completed.
-So the segmenter says:
-"This full stop is final.
-I will never never take it back.
-Do with this sentence, whatever you like, I will not touch it."
-Then some of these some of these full stops are still unstable.
-So I may will remove this full stop, and I may move it slightly.
-And then we also have to like handle that properly.
-And then yes.
-And the rest, the last sentence is only expected or incoming like we do not know what what the sentence will finish like.
-We are sending now full sentences to the machine translation system.
-So that is the the that is like good.
-That means that the empty system fed with the input is ready for.
-So now, going into German.
-It will say like something like:
-"Pixeln auf Ihrem Bildschirm.
-Zu jedem Zaitpunkt.
-Es ist auch eine sehr flexibele Architectur."
-Also, so this makes this makes sense.
-This is like correct German sentences.
-The issue is how much space you have to show this German to the user.
-So if we have two lines of subtitles, then we would then we would show this yellow part and this yellow part.
-And then, because the last sentence got some extra words, tt got extended, the system decided to change the beginning of of this sentence.
-It decided to change the last word on the first subtitle line.
-If the line is like still visible we can easily do the change.
-And nothing bad happens.
-If we are limited to just one line of subtitle output, t hen this line has been already rolled out.
-Like the the the the user can no longer see it.
-The user saw it a second ago.
-But now this is no longer accessible.
-So we would have to show the like only half of the sentence, and that is something that we cannot do.
-So the sentence has changed.
-We call this reset.
-Now the now these subtitling mechanism has to go back and show something which has already scrolled up and show it again so that the user can reread.
-But this reset is extremely annoying.
-So you may have noticed noticed that sometimes this these subtitles got red.
-And the the red effect is exactly highlighting a reset has happened.
-So the the segmenter the segmenter was oscillating like where to put some of the full stops, where to put the ah, the casing changes.
-And if the change of the full stop or the casing happened above the edge, in the line which already rolled up, then the subtitle, even for here for ASR issued a rested, and it also indicated in red.
-So the red for me was like a remark.
-Yes, this is the red.
-So this is the this is the case where the subtitles had to scroll back, because something was updated outside of the screen.
-So that, that is an illustration why the limited output space is so critical for delivering the the translation to the user.
-If you limit yourself too much, if the language difference is too big, and so the word reordering and the length of the sentences of like make you redo larger bits that then fit on the final screen, then the user will be experiencing very confusing resets.
-So I 'm like stressing this because this is something this is these are decisions that you make along the whole pipeline.
-And it is only the very last bit the size of the window that kills it, or or makes it make it workable.
-So that is that is why we are like fighting in the consortium.
-Like what is the better output.
-The it seems, based on these arguments, that you definitely do not want to have these subtitles.
-You you prefer you you should prefer the longer paragraph view that that you saw on the previous slide.
-But the problem here is that if you if you make some very bad mistake, if some some bad word of frmo profanity appears in the output, it will stick there for too long.
-And people like the take out their cell phones and and take pictures of that of that bad word.
-So ah, you are exposing too much of of your problems in this setup.
-So that is why that is why the the some some partners in the consortium preferred the the subtitles.
-But there is a big risk of of the subtitles being incomprehensible.
-Ok.
-So then there is the overall cognitive load, and the the the overall usability.
-We have two users, they are here, who confirmed that.
-So so sorry.
-There is many that that is another these are these here.
-So there is so many users who have tried to follow this have said that there is no way that you would be following the translation on your notebook and looking at the slides or the speaker, who is in front of you.
-Even if it is like in a very close angle, if you do not have to move your eyes too much, you still have to accomodate because of the different distance, and, that will take some time.
-And then you will, as soon as you look up at the slides, you will lose the subtitles, and you will lose content.
-So we are now working on adding the slides also to the to the screen where the subtitles appear, or the other way around putting subtitles to the to the screen, where the slides are.
-So this is something which which has to be done.
-And then the overall usability.
-The overall usability is still very bad.
-I'm inviting you whoever does not speak French, and would like to join us.
-We are, hopefully this week, we are running like a French movie watching session, or just ten minutes of a TED talk.
-We do not speak French.
-So we will follow our systems, recognizing the French and translating into English, or or check or any other language.
-And ee will try to come up with improvements that would make it actually usable.
-Because it is very big difference, whether you can understand the source language, or or not.
-Our, we had a similar session with Martin Popel presenting something on machine translation evaluation in Czeck and it was addended by our two foreign students.
-And these two foreign students reported that they could follow the Czeck talk, if they fully focused on the paragraph view.
-And then a s soon as they looked upon the slides, they got lost.
-So if with full attention to the slides, it was possible to follow it.
-But this is not for normal users.
-Like normal users have to have to have some free time for their for their brains as well.
-I would like to highlight that the desired setting differs from user to user.
-Those who understand the source language will need the simultaneitly, and they will prefer it over precision and stability.
-If you are following what I 'm saying, then and if you are reading the subtitles in your mother tongue, then they could provide you with the words that you missed.
-If you do not understand a word it could appear here, you would understand it.
-But it has to appear here at the like on the spot, at at the moment, when I said the word.
-If it is there three seconds after, then you, it was of no use to you anymore.
-Because yeah like you have moved in what you are listening already.
-So if you are following the source language, the subtitles in your mother tongue can help you, but they have to be immediate.
-If you do not understand the source language, then you are only relying on the text.
-And in that case, you would prefer stablility and precision
-And you are happy to wait for seconds.
-You you do not know what I 'm talking about at all.
-So it is not a problem if if you get my message eight seconds later.
-So this is two very different use cases.
-And it should be the user to select which which of the displays is is there not not us.
-OK so evaluation.
-There are three aspects of spoken language translation.
-Quality, that is something that we know from machine translation.
-And we know how to have vaguely estimate the translation quality.
-But there is also the lag.
-How much is the text in the translation delayed behind the source.
-Some of the lag is obviously inevitable, because you have to wait for the German verb, or we have to anticipate it in some way.
-And there is flicker.
-So if you have a system which is updating, and we have such systems, then these systems can anticipate, and they have the capacity to coring themselves.
-So then suddenly they can create some output, and then remove it in the next step.
-And this has to be controlled very much so that the user is not confused.
-So we are working on an evolution tool with E brahim Ansari.
-And here is just the the the most serious problem.
-If you have this English ASR.
-Do you know it is a cat.
-Isn't it.
-Yes it is like that.
-So let us imagine that the segmenter has segmented it into these two chunks.
-There is no way to align it well with this German translation reference, because it has three sentences that they the words are grouped in a different way in the sentences.
-So we have to somehow force align these so that the basic set of units that we are evaluating over is  common to all systems, regardless of what the English ASR does.
-Uh, everybody has to reach the same reference segmentation.
+A pak je tu poslední věta, která nabývá víc a víc slov.
+Pokud zde segmentátor svou práci dokončí, proces se zcela zastaví.
+Pro segmentátor už nezbyde nic k úprávě, takže se věta zbarví dočerna a stane se z ní plnohodnotný výstup.
+Zde vidíte, jak je schopnost odhadovat důležitá.
+Pokud by segmentátor svou práci nedokončoval, hodně textu zůstane v šedé barvě, což způsobuje, že text není dotažený a problikává.
+Uživatelé budou na plnohodnotný výstup čekat až moc dlouho.
+Což je ale i otázka preference, jestli člověku víc vyhovuje čerstvý, ale nedotažený, nebo naopak o pár sekund zpožděný, ale dokončený výstup.
+Není to úplně jednotné.
+Takže na tom jinými slovy musíme pracovat.
+Ideálně by měl každý uživatel mít možnost si vybrat.
+Chcete mít co nejmenší prodlevu i za cenu toho, že můžete číst něco, co ještě může být upraveno, anebo si chvilku počkáte na pknohodnotný výstup.
+To je něco, co by si měl ideálně každý uživatel vybrat.
+Pokud má člověk před sebou tento delší kontext, lépe se vzpamatuje z procesních chyb.
+S odřenýma ušima je tak možné vnímat řeč, pokud je vám známá a pokud se příliš nevzdalujete od smyslu, na co je strojový překlad cvičen.
+Nuže dobrá.
+Tady je pak stručný přehled toho, co je třeba udělat.
+Pokud se text zobrazuje pouze ve dvou řádcích.
+A vy máte systém rozpoznávání řeči.
+Tohle je nějaký proud anglických slov.
+Pixely na vaší obrazovce.
+Kdykoliv.
+Je to velmi pružná sktruktura.
+Jako by to byla kniha.
+Jak vidíte, věty nejsou ohraničené.
+Segmentátor tedy tato ohraničení musí odhadnout.
+Což udělal zde a zde.
+Poté dorazí další data ze systému rozpoznávání řeči.
+Díky této aktualizaci se aktualizuje i segmentátor.
+A ohraničí další větu.
+Je to řetězec aktualizací.
+A některé z vět jsou už dokončené.
+Segmentátor oznámí:
+„Toto ohraničení je konečné“.
+Měnit už ho nebudu.
+„Dělej si s touhle větou, co chceš, ale já už se jí ani nedotknu“.
+Některá z těchto ohraničení jsou přesto nedotažená.
+Takže je mohu zrušit a lehce posunout.
+Musíme si opravdu dát záležet.
+A pak.
+Zbytek, přičemž se u poslední věty neočekává, že bychom věděli, kde končí.
+Prostě do systému posíláme celé věty.
+Což je fajn.
+Neboť to znamená, že systém disponující daty je připraven.
+Nyní přejděme do němčiny.
+Řeknu něco jako:
+„Pixeln auf Ihrem Bildschirm“.
+„Zu jedem Zeitpunkt“.
+„Es ist auch eine sehr flexible Architektur“.
+To dává smysl.
+To je správně poskládaná německá věta.
+Problém je, kolik takové němčiny chceme uživateli ukázat.
+Máme-li titulky o dvou řádcích, pak bychom ukázali tuhle a tuhle žlutou část.
+A pak, protože se poslední věta rozrostla o pár slov, se systém rozhodl změnit začátek této věty.
+Rozhodl se změnit poslední slovo v prvním řádku.
+Pokud je řádek stále viditelný, můžeme ho ještě změnit.
+A nestane se nic špatného.
+Pokud by se však zobrazoval pouze jeden řádek, sdělení by zmizelo.
+Uživatel už by ho dál neviděl.
+Uviděl ho sekundu zpátky.
+Ale teď už se k němu nedostane.
+To bychom museli ukázat půlku věty, což neumíme.
+Jinými slovy se věta změnila.
+Takový proces nazýváme reset.
+Kdy se titulek musí vrátit zpátky, i když už zmizel, aby si ho uživatel mohl znovu přečíst.
+Což je ale velmi otravné.
+Takže si někdy můžete všimnout, že se titulky zbarví dočervena.
+Což značí, že došlo k resetu.
+Segmentátor se rozhodoval, kde větu ohraničit, kam umístit znaménko.
+A pokud k takové změně došlo i přesto, že titulek už zmizel, rovněž se věta zbarví dočervena.
+Takže to je pro mě takové upozornění.
+Aha, tady to zčervenalo.
+Tady se titulek musel vrátit, protože došlo k úpravě.
+Takže to jen pro ilustraci, jak moc důležité je u překladu nakládat s prostorem pro zobrazení titulků.
+Pokud se totiž příliš omezíte nebo se jazyky od sebe opravdu dost liší, takže při skládání slov a ohraničování vět musíte hodně vracet nebo zkracovat, může se uživatel dočkat velmi matoucích resetů.
+Proto to tak zdůrazňuji, neboť se jedná o rozhodnutí, které postihují celý proces.
+A je to právě i velikost obrazovky, co může všechno úplně pořbít, anebo naopak podržet.
+Proto mezi sebou občas tak trochu bojujeme.
+Když přijde na to, co je lepší.
+Na základě těchto argumentů byste určitě neměli chtít takové titulky.
+Ale spíše delší odstavec, jaký jste viděli na předchozím slidu.
+Háček je v tom, když se dopustíte opravdu závažné chyby, která se ve výstupu zobrazí příliš dlouho.
+A lidé ji stihnou vyfotit.
+Čímž odhalí až moc vašich problémů.
+Proto někdo z nás preferuje titulky.
+I když mohou být nesrozumitelné.
+Dobrá.
+Zde je celková kognitivní zátěž a použitelnost.
+Potvrdili nám ji dva uživatelé.
+Za což se omlouváme.
+Je zde mnoho.
+Uživatelů, kteří to zkusili a prohlásili, že nehodlají koukat na titulky v počítači a zároveń na řečníkovu prezentaci.
+Ačkoliv se jedná o blízký úhel, takže nemusíte příliš hýbat očima, přesto si musíte chvíli zvykat na odlišnou vzdálenost.
+A jakmile se podíváte na prezentaci, utečou vám titulky a tím pádem i obsah.
+Takže nyní pracujeme na zobrazení prezentace i snímků najednou, ať už u uživatelů, nebo na podiu.
+To se prostě musí udělat.
+Pak je tu celková použitelnost.
+Která je stále velmi nízká.
+Zvu všechny, kteří nemluví francouzsky, aby se přišli podívat.
+Na pásmo francouzských filmů, které, doufejme, proběhne příští týden, anebo jen na desetiminutový TED talk.
+Nikdo z nás neumí francouzsky.
+Takže využijeme náš systém, který bude rozpoznávat francouzštinu a překládat ji do angličtiny, ale případně i jiného jazyka.
+A pokusíme se přijít s vylepšeními, které systém učiní použitelným.
+Neboť je opravdu velký rozdíl, jestli výchozímu jazyku rozumíte či nikoliv.
+Jednou jsme s Martinem Popelem měli prezentaci o strojovém překladu v češtině, které se zúčastnili i dva naši zahraniční studenti.
+Kteří nám řekli, že když se plně soustředili na výstupní text, byli schopni našemu projevu rozumět.
+Ale jakmile se podívali na prezentaci, ztratili se.
+Takže při plné koncentraci se to zvládnout dá.
+Ale běžní uživatelé.
+Potřebují také nějaký čas pro svůj mozek.
+Je však třeba zdůraznit, že se tento aspekt u každého uživatele liší.
+Ti, kteří rozumí výchozímu jazyku, chtějí titulky hned a nepotřebují je mít precizní.
+Pakliže vnímáte, co říkám, a čtete titulky v mateřském jazyce, může text doplnit to, co vám při projevu uteklo.
+Když neznáte význam slova, které zazní, můžete mu porozumět.
+Ale jen tehdy, pokud se zobrazí ve stejný moment, kdy zazní.
+Pokud se zobrazí o tři sekundy později, je to už k ničemu.
+Protože se dávno zabýváte tím, co zaznělo právě teď.
+Takže pokud vnímáte výchozí jazyk, můžou vám titulky v mateřštině pomoct, ale musí se zobrazit hned.
+Pokud výchozímu jazyku nerozumíte, spoléháte se pouze na text.
+V takovém případě budete preferovat ten precizní a dotažený.
+A nebude vám vidět si tu chvilku počkat.
+Nemáte-li vůbec tušení, o čem hovořím.
+Není problém, když se to dozvíte o osm sekund později.
+Takže to jsou dva odlišné uživatelské přístupy.
+A každý by měl být možnost si vybrat.
+Dobrá, nyní k vyhodnocování.
+Existují tři aspekty překladu mluvené řeči.
+Kavlita, kterou známe ze strojového překladu.
+A víme, jak ji přibližně určit.
+Pak je tu ale ještě prodleva.
+O kolik je překlad oproti orginálu opožděn.
+Někdy je prodleva samozřejmě nevyhnutelná, když například čekáme na německé sloveso, nebo se ho můžeme pokoušet odhadnout.
+A nakonec porblikávání.
+Takže pokud máte systém, který se aktualizuje a má schopnost odhadovat a i se sám korigovat.
+Může vyprodukovat výstup, který ale následně zase smaže.
+Což je třeba pečlivě kontrolovat, aby nebyl uživatel nebyl zmatený.
+Na takovém nástroji pracujeme s Ebrahimem Ansarim.
+A teď přichází ten nejzávažnější problém.
+Pokud máte anglický systém rozpoznávání řeči.
+Víte, že je to kočka.
+Ne?.
+Opravdu.
+Představme si, že se to segmentátor rozhodl rozdělit na dvě části.
+Což nejde dobře porovnat s německou verzí, kde jsou tři věty s jinak poskládanými skupinami slov.
+Takže je musíme nějak donutit a vytvořit hodnotící sadu základních jednotek, která je pro všechny systémy stejná, nehledě na to, co se děje u angličtiny.
+U všech musí být segmentace stejná.
 [1:00:07]
-So there is some strategies.59:49
+Takže zde je pár strategií.59:49
 So we have to somehow force align these.
 So that the basic set of units that we are evaluating over is common to all systems, regardless of what the English ASR does.
 Uh.
