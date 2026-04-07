@@ -1,15 +1,15 @@
-Je to úplně přetížené.
+Je to úplně přehlcené.
 Dobrá.
-Pokud mě slyšíte, pak je vše v pořádku.
+Pakliže mě slyšíte, je vše v pořádku.
 Takže, dovolte mi vás přivítat.
 Na prvním semináři v letním semestru nebo také pondělním semináři.
-A je mi potěšením zde přivítat jednoho z našich kolegů.
+Je mi potěšením zde přivítat jednoho z našich kolegů.
 Z ÚFALu.
 A já už se nemohu dočkat, co všechno se může pokazit při překladu v reálném čase.
 Takže podium.
 Je tvoje.
 Děkuji za přivítání.
-No, obávám se, že to i uvidíte na vlastní oči.
+No, obávám se, že to uvidíte i na vlastní oči.
 Takže, jak bylo řečeno, tohle je shrnutí dosavadního vývoje projektu ELITR, kde se pokoušíme o překlad v reálném čase do několika cílových jazyků, a já bych vám teď krátce představil, jak to celé funguje.
 Zkusím to ještě jednou.
 Tedy, jestli se tu něco objeví, nevypadá to tak.
@@ -20,11 +20,11 @@ Pokud tu však máte vlastní zařízení, vlastní notebook nebo také telefon.
 Existuje sdílený Google dokument, který pravděpodobně znáte z předchozích pondělních seminářů, a tam jsou dva odkazy, kde můžete vidět nejen transkripce, ale i překlady do cílového jazyka, který si vyberete.
 Myslím, že mezi těmito jazyky je i hindština.
 Takže, při prezentaci záměrně zazní pár vtipů a mnoho si nezáměrně přečtete v titulcích.
-Nesmějte se příliš hlasitě.
+Nesmějte se příliš nahlas.
 My dobře víme, co se tu může objevit.
 Na druhou stranu to probíhá v reálném čase.
 Takže, dnes.
-Bych rád krátce pohovořil o rozdílech mezi strojovým překladem a překladu mluvéného slova.
+Bych rád krátce pohovořil o rozdílech mezi strojovým překladem a překladem mluvéného slova.
 A následně shrnul ambice, které náš projekt má, a že jsou opravdu velké.
 Což si uvědomujeme.
 A proto provádíme několik testování.
@@ -34,7 +34,7 @@ Bych v krátkosti shrnul původní strukturu.
 A pak bych se dostal ke všem možným důvodům, proč by se něco mohlo pokazit.
 Je to, ano, je to celkem dlouhý výčet.
 A k našemu štěstí, díky všem testováním, která provádíme, jsou tyto chyby.
-Také ty, které odhalíme.
+Vesměs také ty, které odhalíme.
 A jejich počet v průběhu testování tolik nestoupá.
 Takže sice máme chyby.
 Ale naštěstí už jsme blízko tomu je v některých případech opravit. Dobrá, pak to shrnu a pustíme se do akce.
@@ -42,12 +42,12 @@ Takže ještě jednou, tinyurl.com.
 ELITR Monday Tests.
 Tam si můžete zobrazit titulky.
 Dobrá, už dlouho pracujeme.
-Jako Ústav už dlouho pracujeme na strojovém překladu, už několik let, nebo dekád vlastně a.
-Když se řekne strojový překlad.
-Zřejmě si představíme překlad textu.
-Kde vstupními daty jsou věty, které jsou skoro vždy gramaticky správně a mohou být ve formě dokumentu.
+Jako ústav už dlouho pracujeme na strojovém překladu, už několik let, nebo dekád vlastně.
+A když se řekne strojový překlad.
+Zřejmě si představíte překlad textu.
+Kde vstupními daty jsou věty, které jsou skoro vždy gramaticky správně, takže mohou být už ve formě dokumentu.
 Takže máte nějaké sdělení, nějaký kontext okolo, nebo můžete překládat větu po větě.
-Každopádně je nepochybně postavené na větách. Při překladu mluveného slova.
+Vše je však nepochybně postavené na větách. Při překladu mluveného slova.
 Je vstupem zvuk.
 A výstupem text.
 Ještě se dostaneme k podrobnějším detailům.
@@ -59,7 +59,7 @@ Jisté napětí.
 Když k sobě dáme tyto dva komponenty, rozpoznávání řeči a strojový překlad.
 Je tu ještě jedna oblast, kterou bych chtěl zmínit, a sice „postupný strojový překlad“.
 Vědci k tomuto typu přistupují tak.
-Že začnou slovy, která tvoří věty, a tato slova přidávají do systému, ale vždy postupně.
+Že začnou slovy, která tvoří věty, a tato slova přidávají do systému, vždy ale postupně.
 Proto postupný strojový překlad.
 Překlad je pro mě, alespoň podle toho, co vím a jak tomu rozumím, stále založený na textu.
 Je produkován jednou za čas a obsahuje pouze slova.
@@ -68,14 +68,14 @@ I když děláme věci postupně.
 Dobrá.
 Takže na obrázcích vidíte ambici, respektive shrnutí obou technologií, které náš projekt zahrnuje.
 Snažíme se spojit rozpoznávání řeči a strojový překlad do překladu mluveného slova.
-Zde je něco k histroii rozpoznávání řeči, my jako Ústav.
+Zde je něco k histroii rozpoznávání řeči, my jako ústav.
 Jsme se jím moc nezabývali.
 Takže jsem tohle odněkud zkopíroval.
-Jak je vidět, už od osmdesátých let proběhlo několik testování, které činnost rozpoznování řeči dokázaly vylepšit.
+Jak je vidět, už od osmdesátých let proběhlo několik testování, která činnost rozpoznování řeči dokázala vylepšit.
 Dostali jsme se k poměru okolo dvou až čtyř procent chybných slov.
-Takže sem jsme to s přesností dokázali vytáhnout a.
-V úplných začátcích.
-V roce devatenáct set devadesát něco se některé systémy ve svém výkonu přiblížily člověku, a to i u běžné řeči, kde je nekonečné množství projevů či setkání.
+Takže sem jsme to s přesností dokázali vytáhnout.
+A v úplných začátcích.
+V roce devatenáct set devadesát něco se některé systémy ve svém výkonu přiblížily člověku, a to i u běžné řeči, kde je nekonečné množství projevů či hovorů.
 V porovnání jsou systémy však stále někde úplně jinde, ale to se v posledních letech díky neuronovým sítím začalo měnit.
 Takže se u běžné řeči dostaneme někam ke 40 hovorům mezi dvěma náhodnými anglickými mluvčími.
 U člověka je to při šesti procentech 2017.
@@ -84,9 +84,9 @@ Pokud ho správně nastavíme.
 Dokáže se vyrovnat člověku.
 Tohle je pak vývoj strojového překladu do češtiny, jak si pamatujete z předchozích příspěvků Martina Popela a těch mých.
 Tohle jsou naše systémy.
-A ten poslední z nich je superlidský strojový překlad z angličtiny do češtiny z roku 2018.
-Popel ho sestrojil tak, že dokázal překonat profesionální lidské překladatele, ale jednalo se objemný překlad.
-Mohli si za to ale sami.
+A ten poslední je superlidský strojový překlad z angličtiny do češtiny z roku 2018.
+Popel ho sestrojil tak, že dokázal překonat profesionální lidské překladatele. Jednalo se však objemný překlad.
+I když oni si za to mohli tak trochu sami.
 Nevěnovali tomu totiž tolik pozornosti, brali to jako běžnou zakázku.
 Takže vytvořili překlad průměrné kvality, věty po větě.
 Popelův systém tak byl výrazně lepší než oni.
@@ -105,7 +105,7 @@ Takže to je náš projekt, ELITR.
 No, projekt.
 Snažíme se.
 Tohle se rozpozná chybně, neboť to neumí rozpoznat jména. Takže, v projektu ELITR tedy dáváme dohromady rozpoznávání řeči a strojový překlad, na úrovni hned několika jazyků. Ještě se k tomu dostanu.
-My projekt koordinujeme, na strojový překladu se kromě nás specializují také vědci z Univerzity Edinburg.
+My projekt koordinujeme, na strojový překlad se kromě nás specializují také vědci z Univerzity Edinburg.
 To jen pro ujasnění. Na rozpoznávání řeči jsou experti v Karlsruhe.
 Máme ty nejvíc výkonné systémy.
 Takže když je dáme dohromady.
@@ -117,16 +117,16 @@ A pak máme partnera Alfaview, což je uživatelský systém pro konference na d
 A to Nejvyšší kontrolní úřad České republiky.
 A.
 Nejvyšší kontrolní úřad.
-Se bojí dělat něco, co se pojí s ošemetným financováním.
-Takže nechce dostat ani korunu.
-Tudíž není součástí projektu, ale pouze spřátelenou uživatelskou platformou.
+Se bojí jít do něčeho, co se pojí s ošemetným financováním.
+A tak nechce dostat ani korunu.
+Tudíž není součástí projektu, ale pouze spřízněnou uživatelskou platformou.
 Která nečerpá peníze od Evropské komise.
 Nuže dobrá.
 Takže naše ambice.
 Je opravdu velká.
 Chceme být součástí kongresu, který Nejvyšší kontrolní úřad.
 Tento rok pořádá.
-Někdy na přelomu května a červnam, přičemž účastníci kongresu pocházejí z různých zemí a dohromady mluví 43 jazyky.
+Někdy na přelomu května a června, přičemž účastníci kongresu pocházejí z různých zemí a dohromady mluví 43 jazyky.
 Což je daleko za možnostmi simultánního lidského tlumočení, takže bychom rádi zajistili ty zbylé, chybějící jazyky.
 Pro upřesnění, na kongresu se bude hovořit.
 Šesti jazyky.
@@ -146,7 +146,7 @@ A některé z nich mají dokonce tak nový či nejasný status, že pro ně.
 Zatím neexistují ani učebnice gramatky.
 To je celkem výzva sama o sobě.
 Dobrá.
-O ano, takže ty akce.
+Ach ano, takže ty akce.
 Víme, že by to mělo fungovat.
 Takže jsme s projektem začali.
 Už minulý rok v lednu a v březnu.
@@ -162,13 +162,13 @@ Takže jsme přidali další testování.
 První.
 Jsme provedli v březnu.
 Minulého roku.
-Na studentském Dnů firem, kde jsme simulovali potenciální situaci.
+Na studentském Dnu firem, kde jsme simulovali potenciální situaci.
 A testovali staré, dříve existující technologie, kterými disponovali v Karlsruhe a PerVoice.
-A přidali akorát náš strojový překlad z angličtiny do češtiny. Pak jsme se spojili s, teď si nevybavím správný anglický název, Ústavem translatologie na Filozofické fakultě Univerzity Karlovy.
+A přidali akorát náš strojový překlad z angličtiny do češtiny. Pak jsme se spojili s, teď si nevybavím správný anglický název, ústavem translatologie na Filozofické fakultě Univerzity Karlovy.
 [0:12:21]
 A díky jejich podpoře můžeme navštěvovat simulované konference, při kterých trénují jejich tlumočníci.
-Které nahráváme a analyzujeme, co náš systém s takovým množstvím různých vstupů dovede.
-Takže je to podobné jako v tlumočnických kabinách, přičemž se snažíme nasnímat to, co říkají, a zkomplementovat to pro další jazyky.
+A my nahráváme a analyzujeme, co náš systém s takovým množstvím různých vstupů dovede.
+Takže je to podobné jako v tlumočnických kabinách, přičemž se snažíme nasnímat to, co říkají, a zkomplementovat pro další jazyky.
 Pak jsme měli dvě oficiální akce, které jsme pro náš projekt naplánovali. První byla pracovní skupina k dani z přidané hodnoty, která se ukutečnila v červnu.
 A hned na to v říjnu proběhlo další setkání.
 Takže tyhle akce od sebe časově nebyly příliš vzdálené.
@@ -176,20 +176,20 @@ A za tak krátký čas se to moc dosáhnout nedá.
 V listopadu jsme pak přidali další.
 Naši technologii jsem demonstroval na Dni otevřených dveří Matfyzu and rovněž jsem se ji pokusil představit na Best of prg.ai.
 Teď v únoru, takže celkem nedávno, jsme měli workshop nanečisto jako přípravu na kongres.
-Jeho cílem bylo laické i odborné veřejnosti ukázat, že nejen strojový překlad, ale i další textové či neolingvistické technologie, mohou být užitečné pro jejich byznys.
+Jeho cílem bylo laické i odborné veřejnosti ukázat, že nejen strojový překlad, ale i další textové či neolingvistické technologie mohou být užitečné pro jejich byznys.
 Workshop samozřejmě povedeme v angličtině a samozřejmě někde narazíme na jazykovou bariéru, takže účastníci uvidí i některé překlady.
 V listopadu tak proběhlo jediné úspěšné demo.
-Což byl obrovský neúspěch, neboť nefungovala WiFi.
+Tohle pak byl obrovský neúspěch, neboť nefungovala WiFi.
 K tomu se dostanu později.
-A Lang Tools workshop sice proběhl bez komplikací, ale pro uživatele nebyl moc přínosný.
+A LangTools workshop sice proběhl bez komplikací, ale pro uživatele nebyl moc přínosný.
 Důvod snad uvidíte na dalších slidech.
 Tohle jsou budoucí akce.
-Opět simulovaná konference na Filozofické fakultě.
+Opět simulovaná konference na filozofické fakultě.
 Opět se s nimi, doufám, setkáme.
 Pak je tu ještě další věc na studentském Dnu firem, k níž bychom se chtěli dostat, protože takové množství z Evropy nabízí celou řadu projevů v jazyce, který pro ně není mateřský.
 Takže pro naše systémy představují celkem oříšek.
 Zde tedy získáme testová data a vytvoříme z nich sdílený úkol, abychom studentům porozuměli.
-Pak, o ano, tohle je sdílený úkol, do něhož se snažíme zapojii další výzkumná zařízení, abychom data od studentů zpracovali.
+Pak, o ano, tohle je sdílený úkol, do něhož se snažíme zapojit i další výzkumná zařízení, abychom data od studentů zpracovali.
 Následovat pak bude druhý workshop nanečisto.
 Možná přidáme ještě další.
 Hlavní akce je pak v červnu, tady v Praze.
@@ -198,8 +198,8 @@ Dobrá.
 Takže zde je velmi krátké shrnutí březnové akce, tedy studentského Dne firem.
 Jedním z účastníků, kterému jsme dali prostor, nebyl jako obvykle student, nýbrž Tomáš Sedláček, český ekonom.
 A jak vidíte, starý systém odvedl poměrně dobrou práci, a to u překladů do češtiny.
-Zatímco hovořil, systém rozpoznával jeho a.
-Věty, které říkal.
+Zatímco hovořil, systém rozpoznával jeho.
+A věty, které říkal.
 Zhruba minutu jsme měli výbornou podívanou.
 A to bylo pro ty tři dny všechno, byla to opravdu jen minuta.
 Takže jsme začali psát blog.
@@ -221,12 +221,12 @@ Stále potřebujete snímat zvuk, mít vstupní a produkovat výstupní data.
 17:12
 A pak je tu ještě onen malý rozpor.
 Rozpoznávání hlasu zaznamnává slova, ale my chceme překládat celé věty.
-Takže je potřeba proud slov segmentovat do vět, jen pak je můžete přeložit.
-To vás nutí zapojit ještě jeden komponent, segmentátor, přičemž všechny tyto řečové jednotky musíte rozdělit mezi veškeré procesní segmentátory.
+Takže je potřeba proud slov segmentovat do vět, jen pak je můžeme přeložit.
+To nás nutí zapojit ještě jeden komponent, segmentátor, přičemž všechny tyto řečové jednotky musíte rozdělit mezi veškeré procesní segmentátory.
 Takhle je ve skutečnosti celý nápad, dát dvě části dohromady, náročný.
 A takhle vypadá celková struktura.
 Vychází z toho, co vyvinul PerVoice v předchozích projektech, takzvaná „PerVoice platforma“.
-A všechny tyto komponenty pro rozpoznávání řeči se připojí k ústřednímu celku, takzvanému mediátoru, a máte klienta. 
+A všechny tyto komponenty pro rozpoznávání řeči se připojí k ústřednímu celku, takzvanému mediátoru, a máme klienta. 
 Který se k mediátoru připojí.
 Mediator se změní na rozpoznávání řeči, pak na segmentátor, pak na strojový překlad a nakonec na prezentaci.
 Která přijde na web.
@@ -271,11 +271,11 @@ Takže se za celou akci nezaznamenalo vůbec nic.
 Tím pádem nesmíme spoléhat na bezdrátovou síť.
 Pak jsme zaznamenali takový porblém, kdy vše šlo hladce až na konečnou prezentaci, která zahlcovala vyrovnávací paměť webových prohlížečů.
 Jinými slovy se na koncovém zařízení nezobrazovala správně.
-Všechno bylo v pohodě až po konečnou prezentaci.
+Všechno bylo v pohodě až na konečnou prezentaci.
 A tohle je další chyba, něco jako chybějící konfigurace, jako kdybyste s nimi žonglovali.
 Je jednoduché udělat chybu.
 Při jednom testování jsme pozorovali značné prodlevy.
-Kde důvodem bylo naše experimentování se systémem rozpoznávání řeči.
+Důvodem bylo naše experimentování se systémem rozpoznávání řeči.
 Sice jsme ho prováděli lokálně, ale omylem jsme zvuk nejdříve posílali přes WiFi do Itálie a k rozpoznávání pak zpátky k nám.
 Jen pak se to rozpoznávalo.
 Tudíž tento dvojí přenos zapříčinil prodlevu.
@@ -288,11 +288,11 @@ Problém nastane, když máte mikrofon, který umístíte sem, na hrudník.
 A pak mluvíte takhle, s odvrácenou hlavou.
 Mikrofon je tím pádem k ničemu.
 Takže to je jeden problém.
-Pak je tu další věc. Bohužel jsme teď museli vypnout mikrofon na hrudníku a spolehnout se pouze na ten u pusy.
+Pak je tu další věc. Bohužel jsme teď museli vypnout mikrofon na hrudníku a spolehnout se pouze na ten u obličeje.
 Chtěli jsme toto testování protáhnout.
 Neboť na základě oněch tří minut testování se zdá, že chybovost v rozpoznávání angličtiny a češtiny je nižší při umístění mikrofonu k puse místo na hrudník.
 Takže jen vzdálenost od pusy a pohyby hlavou dokážou udělat znatelný rozdíl.
-Spoléháme se proto na lepší mikrofon, ten u pusy.
+Spoléháme se proto na lepší mikrofon, ten u obličeje.
 Což je mimochodem rada pro zpěváky, vokalisty.
 Držte pořádně svůj mikrofon, nesmíte si ho dát moc blízko puse.
 Ale ani moc daleko.
@@ -322,7 +322,7 @@ Co rozpozná stroj, když mu doručíte ten nejlepší možný signál?
 Tohle je příklad od jednoho vysokoškoláka.
 Mluvčí chtěl říct něco jako: „Máte lahev?“.
 „O ano, nacházíme se v samotném srdci Českých Budějovic.“.
-Ale ve skutečnosti je to vysokoškolák, tudíž řekl: „Máte botel? O ano, nacházíme se v samotném srdci Českých Budějovic“, jinámi slovy komunikační šum a hluk v pozadí, protože je na zrovna nějaký festival, takže tam jsou stánky s muzikou, a my byli jen za tenkou zdí a doufali, že před tím vším hlukem najdeme aspoň nějaký úkryt.
+Ale ve skutečnosti je to vysokoškolák, tudíž řekl: „Máte botel? O ano, nacházíme se v samotném srdci Českých Budějovic“, jinými slovy komunikační šum a hluk v pozadí, protože je na zrovna nějaký festival, takže tam jsou stánky s muzikou, a my byli jen za tenkou zdí a doufali, že před tím vším hlukem najdeme aspoň nějaký úkryt.
 Pokud jste nezkuše-, pokud se nacházíte v tak nepříznivých podmínkách, pak zřejmě uslyšíte něco jako: „Máte lahev?“, jelikož nepředpokládáte, že vysokoškolák bude mluvit o hotelu na lodi, „O ano, nacházíme se v samotném srdci“, přičemž mu dojde, že se hovoří o nějakých městech, ale pokud je třeba ze Španělska, nebude vědět, že České Budějovice jsou české město, chápete.
 Běžně by rozpoznávání řeči doručilo jen ta slova, která v šumu dokáže zachytit, pokud mu umí vzdorovat, a když ho umí potlačit, pak vyplivne něco jako: „Máte love, o ano, nacházíme se v samotném srdci, čest bude víc?“ neboť nezná názvy českých měst.
 Modernější systém, nebo pokud mluvčí stojí ve středu, by měl dosáhnout správného zachycení věty.
@@ -336,7 +336,7 @@ Tohle jsou samozřejmě nepříznivé podmínky.
 Hluk v pozadí, jazyk, který není mateřský... no, zatím nejsme v nahrávání takoví profesionálové, takže se nepovedlo seřídit mikrofony, řečníci hovořili příliš nahlas, neboť jsme pečlivě neotáčeli knoflíky.
 Takže podmínky opravdu nepříznivé, ale i taková může být realita.
 Tohle je kvalitou nejlepší záznam, kde je slyšet něco jako: „Proč nosíš boty o tak vysokém podpatku?“ místo „Proč v takovém vedru nosíš boty na podpatku?“.
-A nabídka, kde zazní: „Znám jeden podchod“, místo „obchod“, "kde se prodávají drogy", instead of "boty", nebo něco takového, jinými slovy úplně špatně.
+A nabídka, kde zazní: „Znám jeden podchod“, místo „obchod“, „kde se prodávají drogy“, místo „boty“, nebo něco takového, prostě úplně špatně.
 Takže co po tomhle všem máme v plánu?
 Rozhodně znovu zkusíme vytrénovat naše modely, tentokrát ideálně cizojazyčnými korpusy, pomoct by nám v tom mohl Mozilla CommonVoice.
 A pak je potřeba udělat ještě něco.
@@ -382,7 +382,7 @@ Takže místo „má moje teze dva“ systém rozpoznal "je rozdrobit se", což 
 Výstupem tak bylo: „A cílem mé teorie“ místo: „teze“, „je rozdrobit se“.
 Což určitě není to, co jsme zamýšleli, no.
 Kdybych překládal já, asi bych přeložil podobně.
-Jen jsem chtěl upozornit na „jsou dva“ přeložené jako „rozdrobit se“.
+Jen jsem chtěl upozornit na „má dva“ přeložené jako „rozdrobit se“.
 Což je úplně mimo.
 Dobrá.
 Takže co tu máme, jaké jsou naše plány pro překlad, data, data, data a pak možná pár modelů.
@@ -396,12 +396,12 @@ Takže co tu máme, jaké jsou naše plány pro překlad, data, data, data a pak
 Určitě se pokusíme získat více paralelních dat, pracuje na tom Univerzita v Edingburgu.
 My se zase pokusíme získat více výstupních dat z jednoho jazyka a pak zpětně překládat pro větší přizpůsobivost, takže takový kontrolní mechanismus, takže bychom se rádi zaměřili na všechny tyto materiály.
 Které jsou jen stěží paralelní, některé z nich jsou, ale není jich moc, hlavně pro těch zhruba 19 neunijních jazyků, na které rovněž cílíme.
-Takže snad nám překladový systém vyhodí nějaký rozumný výstup, jehož kvalitu, doufejme, bude schopni vylepšit.
+Takže snad nám překladový systém vyhodí nějaký rozumný výstup, jehož kvalitu, doufejme, budeme schopni vylepšit.
 Vytvoříme pro ně vlastní testové sady a průběžně je vyhodnocovat.
 Rovněž se budeme chtít propojit s TAUS, což je kolekce uživatelsky podporovaných paralelních dat, a ty nám mohou v testových sadách vyfiltrovat podobné věty, větší množství paralelních dat.
 Také budeme chtít vytvořit seznam relevantních jmen, ať už účastníků, nebo prezidenta Nejvyššího kontrolního úřadu.
 I pouhý seznam jmen je pro stojový překlad lepší než nic, takže se pokusíme i o to.
-Také uvažuji nad tím, a to si klidně někdo může sám zkusit, že bychom strojový překlad trénovali i na významově překrouceném materiálu, neboť mám raději, když mi stroj vyplivne něco kloudného, než je překlad špatného rozpoznání řeči. Je pro mě z principu lepší mít něco stejného či odvozeného než vynikající překlad z chybných dat.
+Také uvažuji nad tím, a to si klidně můžete sami zkusit, že bychom strojový překlad trénovali i na významově překrouceném materiálu, neboť mám raději, když mi stroj vyplivne něco kloudného, než je překlad špatného rozpoznání řeči. Je pro mě z principu lepší mít něco stejného či odvozeného než vynikající překlad z chybných dat.
 Tak uvidíme, jestli se ve svém odhadu nemýlím, pokud si systém začne vymýšlet, pak samozřejmě nebudou jásat ani uživatelé, ale v tuto chvíli je náš systém příliš jednoduchý na to, aby rozpoznal, že dělá něco špatně, což bychom rádi zametli pod koberec, takže se uvidí, jestli je tohle dobrá strategie nebo ne a jestli dokážeme takový model vytvořit.
 A obávám se, že se za těch pár měsíců nedostaneme k takovým zajímavým věcem, jako je pohlaví řečníka.
 Systém strojového překladu samozřejmě takovou informaci k dispozici nemá.
@@ -432,9 +432,9 @@ Zde je pak tento text rozšířen, systém rozpoznávání řeči jej doručil s
 Tohle je možná ten nejlepší překlad, kterého strojový překlad mohl dosáhnout, a pak systém doručil takzvané potvrzení: „Nebudu tě více obtěžovat těmito třemi slovy“, „Měli byste poděkovat“, odteď už je nebudu zaznamenávat, ale jen zbytek, „Došlo k mnoha revolucím“.
 Takže zde je samostatné sdělení, „Měli byste“, což je celistvá věta, a začátek té další, což jsme přeložili, jako kdyby se jednalo o jednu větu, a to je prostě špatně, další věta začíná v polovině a my ji přeložíme znovu jako celistvou větu, takže je vidět, že ohraničení vět je kvůli nám neprozkoumané, což všechno podkopává, všechny částečné věty povyšujeme na celistvé, ale to neodpovídá tomu, jak lidé mluví.
 Dobrá, takže když k sobě lépe dáte systém rozpoznávání řeči a strojový překlad a to se nám podařilo, což vám ukážu na následujících slidech, musíte pak ještě nějak odprezentovat výsledek, tudíž se pomalu blížíme do finále, a přesto ještě stále můžeme celou hitparádu pohřbít.
-Ssss.
-Pokud jsou titulky příliš malým písmem, jako jsou tyto, a nebo by byly ještě menší, pak by pro vás neměly žádný význam.
-Tudíž si musíte pečlivě vybalancovat, kolik obsahu kam umístit, a i když jsou pak titulky čitelné pro první řadu, ty zadní někdy musejí spoléhat na svůj telefon a najednou mají jiný tvar, transkripce a překlad se objevují jinde, což znatelně ovlivňuje, kolik informací do nich můžeme vložit, a musíme se operativně rozhodnout, co vynechat a co ne.
+No.
+Pokud jsou titulky příliš malým písmem jako tyto anebo by byly ještě menší, pak by pro vás neměly žádný význam.
+Tudíž si musíte pečlivě rozvrhnout, kolik obsahu kam umístit, a i když jsou pak titulky čitelné pro první řadu, ty zadní někdy musejí spoléhat na svůj telefon a najednou mají jiný tvar, transkripce a překlad se objevují jinde, což znatelně ovlivňuje, kolik informací do nich můžeme vložit, a musíme se operativně rozhodnout, co vynechat a co ne.
 Například když text problikává tak rychle, že ho člověk nestíhá číst.
 Takže to je jeden z důvodů, proč u rozpoznávání řeči nevyužíváme celou neuronovou síť, jelikož je navržena pracovat v okně, které se jednou za čas mění.
 Za jeden úsek se rozpozná osm sekund, přičemž se může měnit začátek, představte si můj projev před osmi sekundami a k tomu se rozhodovat, co bylo první slovo.
@@ -535,13 +535,13 @@ A pokud k takové změně došlo i přesto, že titulek už zmizel, rovněž se 
 Takže to je pro mě takové upozornění.
 Aha, tady to zčervenalo.
 Tady se titulek musel vrátit, protože došlo k úpravě.
-Takže to jen pro ilustraci, jak moc důležité je u překladu nakládat s prostorem pro zobrazení titulků.
+Takže to jen pro ilustraci, jak moc je u překladu důležité rozvrhnout si prostor pro zobrazení titulků.
 Pokud se totiž příliš omezíte nebo se jazyky od sebe opravdu dost liší, takže při skládání slov a ohraničování vět musíte hodně vracet nebo zkracovat, může se uživatel dočkat velmi matoucích resetů.
 Proto to tak zdůrazňuji, neboť se jedná o rozhodnutí, které postihují celý proces.
 A je to právě i velikost obrazovky, co může všechno úplně pořbít, anebo naopak podržet.
 Proto mezi sebou občas tak trochu bojujeme.
 Když přijde na to, co je lepší.
-Na základě těchto argumentů byste určitě neměli chtít takové titulky.
+Po tomhle byste určitě neměli chtít takové titulky.
 Ale spíše delší odstavec, jaký jste viděli na předchozím slidu.
 Háček je v tom, když se dopustíte opravdu závažné chyby, která se ve výstupu zobrazí příliš dlouho.
 A lidé ji stihnou vyfotit.
@@ -563,13 +563,13 @@ Která je stále velmi nízká.
 Zvu všechny, kteří nemluví francouzsky, aby se přišli podívat.
 Na pásmo francouzských filmů, které, doufejme, proběhne příští týden, anebo jen na desetiminutový TED talk.
 Nikdo z nás neumí francouzsky.
-Takže využijeme náš systém, který bude rozpoznávat francouzštinu a překládat ji do angličtiny, ale případně i jiného jazyka.
+Takže využijeme náš systém, který bude rozpoznávat francouzštinu a překládat ji do angličtiny, případně i jiného jazyka.
 A pokusíme se přijít s vylepšeními, které systém učiní použitelným.
 Neboť je opravdu velký rozdíl, jestli výchozímu jazyku rozumíte či nikoliv.
 Jednou jsme s Martinem Popelem měli prezentaci o strojovém překladu v češtině, které se zúčastnili i dva naši zahraniční studenti.
 Kteří nám řekli, že když se plně soustředili na výstupní text, byli schopni našemu projevu rozumět.
 Ale jakmile se podívali na prezentaci, ztratili se.
-Takže při plné koncentraci se to zvládnout dá.
+Při plné koncentraci se to zvládnout dá.
 Ale běžní uživatelé.
 Potřebují také nějaký čas pro svůj mozek.
 Je však třeba zdůraznit, že se tento aspekt u každého uživatele liší.
@@ -602,8 +602,8 @@ Na takovém nástroji pracujeme s Ebrahimem Ansarim.
 A teď přichází ten nejzávažnější problém.
 Pokud máte anglický systém rozpoznávání řeči.
 Víte, že je to kočka.
-Ne?.
-Opravdu.
+Ne?
+Ano, vím.
 Představme si, že se to segmentátor rozhodl rozdělit na dvě části.
 Což nejde dobře porovnat s německou verzí, kde jsou tři věty s jinak poskládanými skupinami slov.
 Takže je musíme nějak donutit a vytvořit hodnotící sadu základních jednotek, která je pro všechny systémy stejná, nehledě na to, co se děje u angličtiny.
@@ -616,7 +616,7 @@ Ano.
 U všech musí být segmentace stejná.
 Takže zde je pár strategií.
 Nebudu už zabředávat do detailů.
-V zásadě s těmito větami buď budeme pracovat a brát jich v potaz víc najednou, anebo se na ně úplně vykašlat a vyhodnocovat třicetisekundové sekvence.
+V zásadě s těmito větami buď budeme pracovat a brát jich v potaz víc najednou, anebo se na ně musíme úplně vykašlat a vyhodnocovat třicetisekundové sekvence.
 Takže jako u strojového překladu, ktreý během 30 sekund vyprodukoval správná slova?
 Pokud vyprodukoval, tak ano, pokud ne, tak ne.
 Takže to je jeden ze způsobů, jak se vyvarovat chybějících vět.
@@ -693,7 +693,7 @@ A ano.
 Prosím.
 Přidejte se k nám.
 Protože.
-Se můžeme.
+Spolu můžeme.
 Je to tak.
 Máme technologii, která sice funguje, ale je dost ošemetná.
 Jsem zvědavý, kam se za těch pár měsíců posuneme.
@@ -707,7 +707,7 @@ Atul.
 V této místnosti už nejméně čtyři lidé.
 A pokud někoho znáte...
 Nebo máte studenty, kteří by se rádi zapojili.
-Prosím, bylo by milé -- a není to v létě -- ale na jaře.
+Prosím, bylo by milé – a není to v létě – ale na jaře.
 Kdybyste jim dali vědět.
 Všechno se dočtete na blogu.
 A chcete-li vědět, jak je to doopravdy, přijďte za námi.
@@ -718,9 +718,9 @@ A já myslím, že máme ještě pár minut na dotazy nebo připomínky.
 Ano.
 Hanko.
 Mluvil jste o problému u rozpoznávání řeči.
-Pokud špatně rozklíčuje slovo, tato chyba se dostane i do strojového překladu.
+Pokud systém špatně rozklíčuje slovo, dostane se tato chyba se i do strojového překladu.
 Rovněž jste hovořil o modelu, který ohraničuje věty.
-Uvažovali jste nad jazykovým modelem, který by kontroloval, jestli je věta gramaticky správně a může se nechat strojově přeložit?
+Uvažoval jste nad jazykovým modelem, který by kontroloval, jestli je věta gramaticky správně a může se nechat strojově přeložit?
 Ano i ne.
 Celý segmentátor je jazykový model sám o sobě.
 Podobně jako n-gramové modely.
@@ -739,7 +739,7 @@ A nějaká gramatičnost vět?
 Ne, ne.
 Tu vůbec nebereme v potaz, protože si nemyslíme, že člověk mluví jen gramaticky správně.
 To, o čem zřejmě hovoříte, by byla rekonstrukce řeči.
-Což je něco, na čem náš Ústav v minulosti rovněž pracoval.
+Což je něco, na čem náš ústav v minulosti rovněž pracoval.
 Zde je úkolem vzít nedokonalý mluvený projev a přeměnit jej ve zdánlivě napsaný.
 To znamená mít všechny věty gramaticky a věcně správně.
 Ale tento nástroj v našem systému zahrnutý není.
@@ -750,11 +750,11 @@ A při dostatku vhodných trénovacích dat bychom rádi vytvořili systém, kte
 Další otázky?
 Prosím.
 Měl bych otázku k umístění mikrofonu, protože jsem se u několikrát setkal s tím, jak řečník drží mikrofon pod bradou.
-Setkali jste se s tím?
-Není to tak časté, všichní tvrdí...
+Znáte to?
+Prý to není tak časté...
 Můžete...
-Je to naprosto pochopitelné.
-Zabráníte tím funění.
+Což dává smysl.
+Tím zabránit funění.
 Nezkoušeli jsme to.
 Takže příště mě uvidíte držet mikrofon pod bradou, abychom vyhodnotili úplně všechno.
 Nevím.
@@ -786,14 +786,14 @@ Titěrné.
 Takže...
 Vypnu titulky v reálném čase, protože...
 Anebo je nechám zaplé.
-Takhle mi ta odpověď stačí.
+Takhle mi ta odpověď naprosto stačí.
 Ne, ne.
 Sám jsem zvědavý, protože tu je....
 Protože mám ještě jeden obecný dotaz.
 Povídejte.
 Ano.
 Jen se ptejte.
-Jen si mezitím přepnu režim.
+Já si mezitím přepnu režim.
 ELITR
 ELITR
 Dáme tam teď hindštinu a maďarštinu.
@@ -815,12 +815,12 @@ Díky nim sbíráme data, ale jejich strategie jsou, řekněme, za hranicemi mo�
 Takže si rádi poslechnou pár vět, i kdyby simultánně.
 Což ale může znamenat i 20 sekund poté.
 Nejdříve si musí udělat představu.
-A pak tlumočit s pomocí notace.
+A pak tlumočit spatra.
 Což je dost vzdálené tomu, co my děláme, ale pohybujeme se ve stejném prostředí, to ano.
 Naše úplně první datová sada, kterou máme, jsou projevy v angličtině, které někteří tito studenti tlumočí do češtiny.
 Máme i transkripci.
 A překládáme to, co bylo řečeno v angličtině.
-A nástroj pro vyhodnocení, který jsem zmiňoval, stanovuje kvalitu strojového překladu na základě stupnice, prodleva nebo problikávání, se však dá uplatnit i na lidské tlumočníky, ale zatím to není otestované.
+A nástroj pro vyhodnocení, který jsem zmiňoval, stanovuje kvalitu strojového překladu na základě stupnice BLEU, prodleva nebo problikávání..., se však dá uplatnit i na lidské tlumočníky, ale zatím to není otestované.
 Ideálně bychom měli dojít k závěru, že lidští tlumočníci jsou sice ve sdělení preciznější a kvalitnější, ale trvá jim to déle.
 Je u nich mnohem delší prodleva.
 A problikávat zřejmě nebudou...
