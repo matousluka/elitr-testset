@@ -815,7 +815,7 @@ Díky nim sbíráme data, ale jejich strategie jsou, řekněme, za hranicemi mo�
 Takže si rádi poslechnou pár vět, i kdyby simultánně.
 Což ale může znamenat i 20 sekund poté.
 Nejdříve si musí udělat představu.
-A pak tlumočit spatra.
+A pak tlumočit od nuly.
 Což je dost vzdálené tomu, co my děláme, ale pohybujeme se ve stejném prostředí, to ano.
 Naše úplně první datová sada, kterou máme, jsou projevy v angličtině, které někteří tito studenti tlumočí do češtiny.
 Máme i transkripci.
